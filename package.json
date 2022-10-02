@@ -1,0 +1,22 @@
+{
+  "name": "p3_ogunleye_code_c",
+  "version": "1.0.0",
+  "description": "integrate a mobile website with animations in css",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --no-source-map main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwhite192/P3_Ogunleye_Code.git"
+  },
+  "author": "Marshea Ogunleye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwhite192/P3_Ogunleye_Code/issues"
+  },
+  "homepage": "https://github.com/mwhite192/P3_Ogunleye_Code#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
