@@ -4,7 +4,7 @@
   "description": "integrate a mobile website with animations in css",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --no-source-map main.scss main.css"
+    "compile": "sass --watch --no-source-map main.scss main.css"
   },
   "repository": {
     "type": "git",
