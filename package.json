@@ -10,13 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/mwhite192/P3_Ogunleye_Code.git"
   },
-  "author": "Marshea Ogunleye",
+  "author": "Marshea Ogunleye <mo.tech.life20@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mwhite192/P3_Ogunleye_Code/issues"
   },
   "homepage": "https://github.com/mwhite192/P3_Ogunleye_Code#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.55.0"
   }
 }
