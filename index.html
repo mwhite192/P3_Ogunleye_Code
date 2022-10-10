@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>ohMyFood</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
-    >
-</head>
-<!-- HTML for ohMyFoods website -->
-<body>
+    />
+  </head>
+  <!-- HTML for ohMyFoods website -->
+  <body>
     <!-- ohMyFoods header -->
     <header class="Home">
-        <img src="./images/logo/ohmyfood.png" alt="ohMyFood logo">
-        <div class="Home__Location">
-            <span class="Home__Location--Icon">
-                <i class="fa-sharp fa-solid fa-location-dot"></i> 
-            </span>
-            <p class="Home__Location--Location">
-                Paris, Belleville
-            </p>
-        </div>
+      <img src="./images/logo/ohmyfood.png" alt="ohMyFood logo" />
+      <div class="Home__Location">
+        <span class="Home__Location--Icon">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </span>
+        <p class="Home__Location--Location">Paris, Belleville</p>
+      </div>
     </header>
-
-    <!-- ohMyFoods Information section -->
-    <section class="Home-Info">
-        <h1 class="Home-Info__Header">
-            Book the menu you like
-        </h1>
+    <!-- core sections for ohMyFoods home page  -->
+    <main>
+      <!-- ohMyFoods Information section -->
+      <section class="Home-Info">
+        <h1 class="Home-Info__Header">Book the menu you like</h1>
         <p class="Home-Info__SubHeader">
-            Discover top-of-the-art restaurants <br> 
-            we picked for you
+          Discover top-of-the-art restaurants <br />
+          we picked for you
         </p>
         <span class="Home-Info__Btn">
-            <button class="Home-Info__Btn--Title">Explore our restaurants</button>
+          <button class="Home-Info__Btn--Title">Explore our restaurants</button>
         </span>
-    </section>
-</body>
+      </section>
+
+      <!-- ohMyFoods Instructions section -->
+      <section class="Home-Instruct">
+        <h1 class="Home-Instruct__Header">How it works</h1>
+        <!-- ohMyFoods Instruction buttons -->
+        <div class="Home-Instruct__Btn">
+          <!-- ohMyFoods "Chose" button -->
+          <div class="Home_Instruct__Btn-Container">
+            <span class="Home-Instruct__Btn-Container--Number-Icon">
+              <i class="fa-solid fa-1"></i>
+            </span>
+            <button class="Home-Instruct__Btn-Container--Btn">
+              <span class="Home-nstruct__Btn-Container--Icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </span>
+              <span class="Home-Instruct__Btn-Container--Title">
+                Chose a restaurant
+              </span>
+            </button>
+          </div>
+          <!-- ohMyFoods "Create" button -->
+          <div class="Home-Instruct__Btn-Container">
+            <span class="Home-Instruct__Btn-Container--Number-Icon">
+              <i class="fa-solid fa-2"></i>
+            </span>
+            <button class="Home-Instruct__Btn-Container--Btn">
+              <span class="Home-nstruct__Btn-Container--Icon">
+                <i class="fa-solid fa-list-ul"></i>
+              </span>
+              <span class="Home-Instruct__Btn-Container--Title">
+                Create your menu
+              </span>
+            </button>
+          </div>
+          <!-- ohMyFoods "Enjoy" button -->
+          <div class="Home-Instruct__Btn-Container">
+            <span class="Home-Instruct__Btn-Container--Number-Icon">
+              <i class="fa-solid fa-3"></i>
+            </span>
+            <button class="Home-Instruct__Btn-Container--Btn">
+              <span class="Home-nstruct__Btn-Container--Icon">
+                <i class="fa-solid fa-store"></i>
+              </span>
+              <span class="Home-Instruct__Btn-Container--Title">
+                Go enjoy it at the restaurant
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
