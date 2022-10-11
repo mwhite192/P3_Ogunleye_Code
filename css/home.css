@@ -3,17 +3,18 @@
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  padding-top: 35px;
 }
 .Home-Header__Image {
-  height: 55px;
+  height: 40px;
 }
 
 .Home-Header__Location {
   background-color: #ededed;
-  font-size: 19px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -29,4 +30,14 @@
 }
 .Home-Info__SubHeader {
   text-align: center;
+  font-size: 25px;
+}
+
+.Home-Info__Btn-Title {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 5px 5px 2px #d3d3d3;
 }
