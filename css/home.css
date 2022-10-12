@@ -30,3 +30,59 @@
 .Home-Info__SubHeader {
   text-align: center;
 }
+
+.Home-Info__Btn-Title {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 5px 5px 2px #d3d3d3;
+}
+
+.Home-Instruct {
+  margin-left: 25px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Home-Instruct__Btn {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Home-Instruct__Btn-Container-NumberIcon {
+  border: 1px solid #9356dc;
+  background: #9356dc;
+  border-radius: 50%;
+  padding: 8px 8px 8px 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.Home-Instruct__Btn-Container-Btn {
+  width: 85%;
+  text-align: left;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: 0px 5px 5px 2px #d3d3d3;
+}
+
+.Home-Instruct__Btn-Container-Icon {
+  color: #7b7b7b;
+  padding-right: 10px;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.Home-Instruct__Btn-Container-Title {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
