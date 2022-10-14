@@ -1,36 +1,3 @@
-.Home-Header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-}
-.Home-Header__Image {
-  height: 55px;
-}
-
-.Home-Header__Location {
-  background-color: #ededed;
-  font-size: 19px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.Home-Info {
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  padding-top: 30px;
-  padding-bottom: 45px;
-}
-.Home-Info__SubHeader {
-  text-align: center;
-}
-
 .Home-Info__Btn-Title {
   color: white;
   border: none;
@@ -38,15 +5,6 @@
   padding: 10px 25px;
   background-image: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 5px 5px 2px #d3d3d3;
-}
-
-.Home-Instruct {
-  margin-left: 25px;
-  padding-top: 35px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .Home-Instruct__Btn {
@@ -82,7 +40,121 @@
   padding-left: 20px;
 }
 
-.Home-Instruct__Btn-Container-Title {
-  font-weight: bold;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+p {
   font-family: "Roboto", sans-serif;
+}
+
+.Home-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.Home-Header__Image {
+  height: 55px;
+}
+
+.Home-Header__Location {
+  background-color: #ededed;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Home-Info {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.Home-Info__SubHeader {
+  text-align: center;
+}
+
+.Home-Instruct {
+  margin-left: 25px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
