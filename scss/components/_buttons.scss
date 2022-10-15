@@ -1,21 +1,27 @@
+//color variables needed to style the home page's buttons
+$primary_color: #9356DC;   
+$secondary_color: #FF79DA;
+
 .Home-Info__Btn-Title{
+    margin-right: 10px;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
     border: none;
-    border-radius: 20px;
-    padding: 10px 25px;
-    background-image: linear-gradient(#ff79da, #9356dc);
+    border-radius: 30px;
+    padding: 15px 40px 15px 35px;
+    background-image: linear-gradient($secondary_color, $primary_color);
     box-shadow: 0px 5px 5px 2px #d3d3d3;
 }
 
 .Home-Instruct__Btn{
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    
+    gap: 25px;  
 }
 
  .Home-Instruct__Btn-Container-NumberIcon{
-    border: 1px solid #9356dc;
+    border: 1px solid $primary_color;
     background: #9356dc;
     border-radius: 50%;
     padding: 8px 8px 8px 10px;

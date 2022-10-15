@@ -71,6 +71,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-p {
+p, h1 {
   font-family: "Roboto", sans-serif;
 }
