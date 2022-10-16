@@ -50,50 +50,47 @@
       <section class="Home-Instruct">
         <h1 class="Home-Instruct__Header">How it works</h1>
         <!-- ohMyFoods Instruction buttons -->
-        <div class="Home-Instruct__Btn">
-          <!-- ohMyFoods "Chose" button -->
-          <div class="Home_Instruct__Btn-Container">
-            <span class="Home-Instruct__Btn-Container-NumberIcon">
-              <i class="fa-solid fa-1"></i>
-            </span>
-            <button class="Home-Instruct__Btn-Container-Btn">
-              <span class="Home-Instruct__Btn-Container-Icon">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-              </span>
-              <span class="Home-Instruct__Btn-Container-Title">
-                Chose a restaurant
-              </span>
-            </button>
-          </div>
-          <!-- ohMyFoods "Create" button -->
-          <div class="Home-Instruct__Btn-Container">
-            <span class="Home-Instruct__Btn-Container-NumberIcon">
-              <i class="fa-solid fa-2"></i>
-            </span>
-            <button class="Home-Instruct__Btn-Container-Btn">
-              <span class="Home-Instruct__Btn-Container-Icon">
-                <i class="fa-solid fa-list-ul"></i>
-              </span>
-              <span class="Home-Instruct__Btn-Container-Title">
-                Create your menu
-              </span>
-            </button>
-          </div>
-          <!-- ohMyFoods "Enjoy" button -->
-          <div class="Home-Instruct__Btn-Container">
-            <span class="Home-Instruct__Btn-Container-NumberIcon">
-              <i class="fa-solid fa-3"></i>
-            </span>
-            <button class="Home-Instruct__Btn-Container-Btn">
-              <span class="Home-Instruct__Btn-Container-Icon Color">
-                <i class="fa-solid fa-store"></i>
-              </span>
-              <span class="Home-Instruct__Btn-Container-Title Color">
-                Go enjoy it at the restaurant
-              </span>
-            </button>
-          </div>
-        </div>
+        <ol class="Home-Instruct__Btn Custom-Counter">
+          <li class="Home-Instruct__Btn--Item">
+            <!-- ohMyFoods "Chose" button -->
+            <div class="Home_Instruct__Btn-Container">
+              <button class="Home-Instruct__Btn-Container-Btn">
+                <span class="Home-Instruct__Btn-Container-Icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </span>
+                <span class="Home-Instruct__Btn-Container-Title">
+                  Chose a restaurant
+                </span>
+              </button>
+            </div>
+          </li>
+          <li class="Home-Instruct__Btn--Item">
+              <!-- ohMyFoods "Create" button -->
+              <div class="Home-Instruct__Btn-Container">
+                <button class="Home-Instruct__Btn-Container-Btn">
+                  <span class="Home-Instruct__Btn-Container-Icon">
+                    <i class="fa-solid fa-list-ul"></i>
+                  </span>
+                  <span class="Home-Instruct__Btn-Container-Title">
+                    Create your menu
+                  </span>
+                </button>
+              </div>
+          </li>
+          <li class="Home-Instruct__Btn--Item">
+            <!-- ohMyFoods "Enjoy" button -->
+            <div class="Home-Instruct__Btn-Container">
+              <button class="Home-Instruct__Btn-Container-Btn">
+                <span class="Home-Instruct__Btn-Container-Icon Color">
+                  <i class="fa-solid fa-store"></i>
+                </span>
+                <span class="Home-Instruct__Btn-Container-Title Color">
+                  Go enjoy it at the restaurant
+                </span>
+              </button>
+            </div>
+          </li> 
+        </ol>
       </section>
 
       <!-- ohMyFoods Restaurants section -->
@@ -102,73 +99,90 @@
             Restaurants
         </h1>
         <!-- "Full Palette" restaurant card -->
-        <div class="Rest-Card__Card-Container">
-            <img class="Rest-Card__Card-Container-Image" src="" alt="beautiful salmon dish in a restaurant">
-            <div class="Rest-Card__Card-Container-Description">
-                <h4 class="Rest-Card__Card-Container-Descripton-Title">
+        <div class="Rest-Card__Container">
+            <div class="Rest-Card__Container-Image-Container">
+              <img class="Rest-Card__Container-Image-Container-Image Full-Position" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="beautiful salmon dish in a restaurant">
+            </div>
+            <!-- <span class="Rest-Card__Container-Image-Container-Banner">
+              <p class="Rest-Card__Container-Image-Container-Banner-Title Full-Mod">
+                New
+              </p> -->
+            </span>
+            <div class="Rest-Card__Container-Description">
+                <h4 class="Rest-Card__Container-Description-Title">
                     The Full Palette
                 </h4>
-                <p class="Rest-Card__Card-Container-Descripton-Location">
+                <p class="Rest-Card__Container-Description-Location">
                     New York
                 </p>
-                <span class="Rest-Card__Card-Container-Description-Icon--Empty">
+                <span class="Rest-Card__Container-Description-Icon Empty">
                     <i class="fa-regular fa-heart"></i> 
                 </span>
-                <span class="Rest-Card__Card-Container-Description-Icon--Filled">
+                <span class="Rest-Card__Container-Description-Icon Filled">
                     <i class="fa-solid fa-heart"></i> 
                 </span>
             </div>
         </div>
         <!-- "Enchanted" restaurant card -->
-        <div class="Rest-Card__Card-Container">
-            <img class="Rest-Card__Card-Container-Image" src="" alt="beautiful dish in a restaurant">
-            <div class="Rest-Card__Card-Container-Description">
-                <h4 class="Rest-Card__Card-Container-Descripton-Title">
+        <div class="Rest-Card__-Container">
+            <div class="Rest-Card__Container-Image-Container">
+              <img class="Rest-Card__Container-Image-Container-Image Enchanted-Position" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="beautiful salmon dish in a restaurant">
+            </div>
+            <!-- <span class="Rest-Card__Container-Image-Container-Banner">
+              <p class="Rest-Card__Container-Image-Container-Banner-Title Enchanted-Mod">
+                New
+              </p> -->
+            <div class="Rest-Card__Container-Description">
+                <h4 class="Rest-Card__Container-Description-Title">
                     The Enchanted Plate
                 </h4>
-                <p class="Rest-Card__Card-Container-Descripton-Location">
+                <p class="Rest-Card__Container-Description-Location">
                     New York
                 </p>
-                <span class="Rest-Card__Card-Container-Description-Icon--Empty">
+                <span class="Rest-Card__Container-Description-Icon Empty">
                     <i class="fa-regular fa-heart"></i> 
                 </span>
-                <span class="Rest-Card__Card-Container-Description-Icon--Filled">
+                <span class="Rest-Card__Container-Description-Icon Filled">
                     <i class="fa-solid fa-heart"></i> 
                 </span>
             </div>
         </div>
         <!-- "Bastille" restaurant card -->
-        <div class="Rest-Card__Card-Container">
-            <img class="Rest-Card__Card-Container-Image" src="" alt="beautiful salmon dish in a restaurant">
-            <div class="Rest-Card__Card-Container-Description">
-                <h4 class="Rest-Card__Card-Container-Descripton-Title">
+        <div class="Rest-Card__Container">
+            <div class="Rest-Card__Container-Image-Container">
+              <img class="Rest-Card__Container-Image-Container-Image Bastille-Position" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="beautiful salmon dish in a restaurant">
+            </div>
+            <div class="Rest-Card__Container-Description">
+                <h4 class="Rest-Card__Container-Description-Title">
                     Bastille
                 </h4>
-                <p class="Rest-Card__Card-Container-Descripton-Location">
+                <p class="Rest-Card__Container-Description-Location">
                     New York
                 </p>
-                <span class="Rest-Card__Card-Container-Description-Icon--Empty">
+                <span class="Rest-Card__Container-Description-Icon Empty">
                     <i class="fa-regular fa-heart"></i> 
                 </span>
-                <span class="Rest-Card__Card-Container-Description-Icon--Filled">
+                <span class="Rest-Card__Container-Description-Icon Filled">
                     <i class="fa-solid fa-heart"></i> 
                 </span>
             </div>
         </div>
         <!-- "Le Gourmand" restaurant card -->
-        <div class="Rest-Card__Card-Container">
-            <img class="Rest-Card__Card-Container-Image" src="" alt="beautiful salmon dish in a restaurant">
-            <div class="Rest-Card__Card-Container-Description">
-                <h4 class="Rest-Card__Card-Container-Descripton-Title">
+        <div class="Rest-Card__Container">
+            <div class="Rest-Card__Container-Image-Container">
+              <img class="Rest-Card__Container-Image-Container-Image Gourmand-Position" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="beautiful salmon dish in a restaurant">
+            </div>
+            <div class="Rest-Card__Container-Description">
+                <h4 class="Rest-Card__Container-Description-Title">
                     Le Gourmand
                 </h4>
-                <p class="Rest-Card__Card-Container-Descripton-Location">
+                <p class="Rest-Card__Container-Description-Location">
                     New York
                 </p>
-                <span class="Rest-Card__Card-Container-Description-Icon--Empty">
+                <span class="Rest-Card__Container-Description-Icon Empty">
                     <i class="fa-regular fa-heart"></i> 
                 </span>
-                <span class="Rest-Card__Card-Container-Description-Icon--Filled">
+                <span class="Rest-Card__Container-Description-Icon Filled">
                     <i class="fa-solid fa-heart"></i> 
                 </span>
             </div>
