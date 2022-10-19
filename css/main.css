@@ -42,6 +42,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+/* A elements unvisited text color is black */
+a:link {
+  color: black;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -73,4 +78,29 @@ select {
 }
 p, h1 {
   font-family: "Roboto", sans-serif;
+}
+
+.Home__Footer-Contact-Section-Header {
+  font-family: "Shrikhand", cursive;
+}
+
+.Home__Footer {
+  color: white;
+  background-color: #3d3d3d;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+.Home__Footer-Contact-Section-List {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.Home__Footer-Contact-Section-List-Item--link {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
 }

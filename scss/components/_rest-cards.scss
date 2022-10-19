@@ -4,48 +4,52 @@
     flex-direction: column;
     align-items: stretch;
     gap: 25px;
-    margin-top: 35px;
-    padding-bottom: 75px;
+    padding-bottom: 90px;
     // position: relative;
     &__Header{
-        margin-left: 25px;
-        padding-top: 55px;
-        font-size: 30px;
+        margin-left: 30px;
+        padding-top: 65px;
+        font-size: 35px;
     }
 }
 
-.Rest-Card__Container{
-    height: 100%;
+.Rest-Card__Link{
+    text-decoration: none;
+}
+
+.Rest-Card__Link-Container{
+    height: 100%;   
     flex-basis: 30%; 
-    // position: relative; 
+    padding-left: 30px;
+    padding-right: 30px;
+// position: relative; 
 }
 
-.Rest-Card__Container-Image-Container-Image {
-    height: 350px;
+.Rest-Card__Link-Container-Image-Container-Image{
+    height: 325px;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
     object-fit: cover;
-    border-radius: 45px 45px 0px 0px;
-    // position: relative;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 1px 1px 20px #bebebe;
+// position: relative;
 }
 
-.Rest-Card__Container-Image-Container-Image.Full-Position{
-    object-position: 0% 100%;
+.Rest-Card__Link-Container-Image-Container-Image.Full-Position{
+    object-position: 0% 85%;
 }
 
-.Rest-Card__Container-Image-Container-Image.Enchanted-Position{
+.Rest-Card__Link-Container-Image-Container-Image.Enchanted-Position{
     object-position: 0% 60%;
 
 }
 
-.Rest-Card__Container-Image-Container-Image.Bastille-Position{
-    object-position: 0% 95%;
+.Rest-Card__Link-Container-Image-Container-Image.Bastille-Position{
+    object-position: 0% 80%;
 
 }
 
-.Rest-Card__Container-Image-Container-Image.Gourmand-Position{
-    object-position: 0% 96%;
+.Rest-Card__Link-Container-Image-Container-Image.Gourmand-Position{
+    object-position: 0% 90%;
 
 }
 
@@ -61,38 +65,36 @@
 //     border-radius: 2px;
 // }
 
-.Rest-Card__Container-Image-Container-Banner-Title.Full-Mod{ 
-    left: 545px;
-    top: 145px;     
-}
+// .Rest-Card__Container-Image-Container-Banner-Title.Full-Mod{ 
+//     left: 545px;
+//     top: 145px;     
+// }
 
-.Rest-Card__Container-Image-Container-Banner-Title.Enchanted-Mod{
-    top: 657px;
-    left: 545px;
-}
+// .Rest-Card__Container-Image-Container-Banner-Title.Enchanted-Mod{
+//     top: 657px;
+//     left: 545px;
+// }
 
-.Rest-Card__Container-Description{
-    width: calc(100% - 50px);
-    margin-left: 25px;
+.Rest-Card__Link-Container-Description{
     flex-grow: 1;
     background-color: white;
     padding: 15px 20px 17px 20px;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 25px 25px;
     box-shadow: 1px 1px 20px #cbcbcb;
 }
 
-.Rest-Card__Container-Description-Title{
-    font-size: 22px;
-}
+// .Rest-Card__Link-Container-Description-Title{
+//     font-size: 25px;
+// }
 
-.Rest-Card__Container-Description-Location{
-    font-size: 20px;
+.Rest-Card__Link-Container-Description-Location{
+    font-size: 22px;
     font-weight: 300;
 }
 
-.Rest-Card__Container-Description-Icon{
-    font-size: 25px;
-    // position: absolute;
-    // left: 410px;
-    // bottom: 35px;
+.Rest-Card__Link-Container-Description-Icon{
+font-size: 25px;
+// position: absolute;
+// left: 410px;
+// bottom: 35px;
 }

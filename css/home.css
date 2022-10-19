@@ -2,7 +2,7 @@
   margin-right: 10px;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   border: none;
   border-radius: 30px;
   padding: 15px 35px;
@@ -13,17 +13,19 @@
 .Home-Instruct__Btn {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
 }
 
 .Home-Instruct__Btn-Container-Btn {
+  margin-left: 17px;
+  margin-top: -22px;
   width: 85%;
   text-align: left;
   background-color: #fafafa;
   border: none;
-  border-radius: 20px;
-  padding: 25px 15px;
-  font-size: 20px;
+  border-radius: 33px;
+  padding: 30px 15px;
+  font-size: 25px;
   font-weight: bold;
   box-shadow: 0px 5px 10px 2px #d3d3d3;
 }
@@ -32,8 +34,9 @@
   color: #7b7b7b;
   padding-right: 10px;
   margin-right: 20px;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
+  font-size: 30px;
 }
 
 /* Box sizing rules */
@@ -80,6 +83,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+/* A elements unvisited text color is black */
+a:link {
+  color: black;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -113,81 +121,94 @@ p, h1 {
   font-family: "Roboto", sans-serif;
 }
 
+.Home__Footer-Contact-Section-Header {
+  font-family: "Shrikhand", cursive;
+}
+
+.Home__Footer {
+  color: white;
+  background-color: #3d3d3d;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+.Home__Footer-Contact-Section-List {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.Home__Footer-Contact-Section-List-Item--link {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
 .Rest-Card {
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 25px;
-  margin-top: 35px;
-  padding-bottom: 75px;
+  padding-bottom: 90px;
 }
 .Rest-Card__Header {
-  margin-left: 25px;
-  padding-top: 55px;
-  font-size: 30px;
+  margin-left: 30px;
+  padding-top: 65px;
+  font-size: 35px;
 }
 
-.Rest-Card__Container {
+.Rest-Card__Link {
+  text-decoration: none;
+}
+
+.Rest-Card__Link-Container {
   height: 100%;
   flex-basis: 30%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.Rest-Card__Container-Image-Container-Image {
-  height: 350px;
+.Rest-Card__Link-Container-Image-Container-Image {
+  height: 325px;
   width: 100%;
-  padding-left: 25px;
-  padding-right: 25px;
   object-fit: cover;
-  border-radius: 45px 45px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 1px 1px 20px #bebebe;
 }
 
-.Rest-Card__Container-Image-Container-Image.Full-Position {
-  object-position: 0% 100%;
+.Rest-Card__Link-Container-Image-Container-Image.Full-Position {
+  object-position: 0% 85%;
 }
 
-.Rest-Card__Container-Image-Container-Image.Enchanted-Position {
+.Rest-Card__Link-Container-Image-Container-Image.Enchanted-Position {
   object-position: 0% 60%;
 }
 
-.Rest-Card__Container-Image-Container-Image.Bastille-Position {
-  object-position: 0% 95%;
+.Rest-Card__Link-Container-Image-Container-Image.Bastille-Position {
+  object-position: 0% 80%;
 }
 
-.Rest-Card__Container-Image-Container-Image.Gourmand-Position {
-  object-position: 0% 96%;
+.Rest-Card__Link-Container-Image-Container-Image.Gourmand-Position {
+  object-position: 0% 90%;
 }
 
-.Rest-Card__Container-Image-Container-Banner-Title.Full-Mod {
-  left: 545px;
-  top: 145px;
-}
-
-.Rest-Card__Container-Image-Container-Banner-Title.Enchanted-Mod {
-  top: 657px;
-  left: 545px;
-}
-
-.Rest-Card__Container-Description {
-  width: calc(100% - 50px);
-  margin-left: 25px;
+.Rest-Card__Link-Container-Description {
   flex-grow: 1;
   background-color: white;
   padding: 15px 20px 17px 20px;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 25px 25px;
   box-shadow: 1px 1px 20px #cbcbcb;
 }
 
-.Rest-Card__Container-Description-Title {
+.Rest-Card__Link-Container-Description-Location {
   font-size: 22px;
-}
-
-.Rest-Card__Container-Description-Location {
-  font-size: 20px;
   font-weight: 300;
 }
 
-.Rest-Card__Container-Description-Icon {
+.Rest-Card__Link-Container-Description-Icon {
   font-size: 25px;
 }
 
@@ -198,32 +219,32 @@ p, h1 {
   gap: 15px;
 }
 .Home-Header__Image {
-  height: 38px;
-  margin-top: 35px;
+  height: 45px;
+  margin-top: 40px;
 }
 
 .Home-Header__Location {
   background-color: #e8e8e8;
-  font-size: 22px;
+  font-size: 25px;
   display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: baseline;
-  gap: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 3px solid #cecece;
 }
 
 .Home__Location--Icon {
-  font-size: 23px;
+  font-size: 28px;
 }
 
 .Home__Location--Location {
-  margin-right: 43px;
+  margin-right: 50px;
 }
 
 .Home-Info {
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,25 +253,24 @@ p, h1 {
   padding-bottom: 75px;
 }
 .Home-Info__Header {
-  font-size: 30px;
+  font-size: 38px;
   margin-right: 30px;
 }
 .Home-Info__SubHeader {
   text-align: center;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 28px;
 }
 
 .Home-Instruct {
-  margin-left: 25px;
-  padding-top: 55px;
-  padding-bottom: 50px;
+  background-color: #f9f9f9;
+  padding: 55px 0px 50px 25px;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 .Home-Instruct__Header {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .Custom-Counter {
@@ -265,15 +285,11 @@ p, h1 {
 
 .Custom-Counter li::before {
   content: counter(step-counter);
-  font-size: 17px;
+  margin-top: 15px;
+  font-size: 20px;
   background-color: #9356DC;
   color: white;
-  padding: 5px 12px 3px 12px;
+  padding: 1px 11px;
   border-radius: 50%;
   position: absolute;
-}
-
-.Home-Instruct__Btn-Container-Btn {
-  margin-left: 17px;
-  margin-top: -22px;
 }
