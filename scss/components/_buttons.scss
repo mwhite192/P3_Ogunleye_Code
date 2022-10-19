@@ -3,14 +3,13 @@ $primary_color: #9356DC;
 $secondary_color: #FF79DA;
 
 .Home-Info__Btn-Title{
-    margin-right: 10px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     border: none;
-    border-radius: 30px;
-    padding: 15px 35px;
-    background-image: linear-gradient($secondary_color, $primary_color);
+    border-radius: 35px;
+    padding: 15px 40px;
+    background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
     box-shadow: 0px 5px 5px 2px #d3d3d3;
 }
 
@@ -25,11 +24,11 @@ $secondary_color: #FF79DA;
     margin-top: -22px;
     width: 85%;
     text-align: left;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     border: none;
     border-radius: 33px;
     padding: 30px 15px;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     box-shadow: 0px 5px 10px 2px #d3d3d3;
 }
@@ -37,7 +36,7 @@ $secondary_color: #FF79DA;
 .Home-Instruct__Btn-Container-Icon{
     color: #7b7b7b;
     padding-right: 10px;
-    margin-right: 20px;
+    margin-right: 25px;
     padding-left: 30px;
     position: relative;
     font-size: 30px;

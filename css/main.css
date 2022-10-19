@@ -43,7 +43,7 @@ a:not([class]) {
 }
 
 /* A elements unvisited text color is black */
-a:link {
+a:visited {
   color: black;
 }
 
@@ -84,12 +84,19 @@ p, h1 {
   font-family: "Shrikhand", cursive;
 }
 
+a:link {
+  color: white;
+}
+
 .Home__Footer {
   color: white;
   background-color: #3d3d3d;
-  padding-top: 10px;
-  padding-left: 25px;
-  padding-bottom: 50px;
+  padding: 30px 0px 30px 25px;
+}
+
+.Home__Footer-Contact-Section-Header {
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 
 .Home__Footer-Contact-Section-List {
@@ -97,10 +104,25 @@ p, h1 {
   padding-left: 0px;
 }
 
-.Home__Footer-Contact-Section-List-Item--link {
-  text-decoration: none;
+.fa-solid {
+  margin-right: 10px;
 }
 
-a:link {
-  color: white;
+.fa-solid.fa-utensils {
+  font-size: 20px;
+}
+
+.fa-solid.fa-handshake-angle {
+  font-size: 15px;
+  margin-right: 9px;
+}
+
+.Home__Footer-Contact-Section-List-Item {
+  padding-bottom: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+}
+
+.Home__Footer-Contact-Section-List-Item--link {
+  text-decoration: none;
 }
