@@ -1,8 +1,7 @@
 // all imports needed to style home page
 @import "../main.scss";                 //imports all global stylings
-@import "../utils/variables";           //imports all the global styling variables
 @import "../components/_buttons.scss";  //imports home page button stylings
-@import "../components/rest-cards";     //imports all the stylings for the restaurant cards
+@import "../components/rest-cards";     //imports all the stylings for the restaurant cards            
 
 // all stylings pertaining to the home page
 .Home-Header{
@@ -64,7 +63,7 @@
     flex-direction: column;
     gap: 60px;
     &__Header{
-        font-size: 35px;
+         font-size: 35px;
     }
 }
 
@@ -89,7 +88,6 @@
     border-radius: 50%;
     position: absolute;
   }
-
 // --> end of styling for the number 'bullets'
 // in the ordered list '<ol>'
 
