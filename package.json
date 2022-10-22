@@ -4,7 +4,7 @@
   "description": "integrate a mobile website with animations in css",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch --no-source-map scss/pages/_home.scss:css/home.css scss/main.scss:css/main.css scss/pages/_rest.scss:css/rest.css"
+    "compile": "sass --watch --no-source-map scss/pages/_home.scss:css/home.css scss/main.scss:css/main.css scss/rest.scss:css/rest.css"
   },
   "repository": {
     "type": "git",
