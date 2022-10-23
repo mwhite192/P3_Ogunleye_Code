@@ -127,6 +127,32 @@ a:link {
   text-decoration: none;
 }
 
+.Rest-Menu__Course-Container-List--Item {
+  list-style: none;
+}
+
+.Rest-Menu__Course-Container-List--Item-Button {
+  background-color: #FFFFFF;
+  border: none;
+  text-align: left;
+}
+
+.Rest-Menu__Course-Container-Button {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.Rest-Menu__Course-Container-Button-Title {
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  margin-bottom: 75px;
+  margin-top: 25px;
+  padding: 15px 85px;
+  border-radius: 40px;
+}
+
 .Rest-Home__Header {
   display: flex;
   flex-direction: column;
@@ -161,6 +187,7 @@ a:link {
   justify-content: space-between;
   align-items: baseline;
   padding-bottom: 35px;
+  padding-top: 40px;
 }
 
 .Rest-Menu__Header-Container-Icon {
@@ -170,6 +197,12 @@ a:link {
 .Rest-Menu__Header-Container-Title {
   font-family: "Shrikhand", cursive;
   font-size: 40px;
+}
+
+.Rest-Menu__Course {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .Rest-Menu__Course-Container-Title {

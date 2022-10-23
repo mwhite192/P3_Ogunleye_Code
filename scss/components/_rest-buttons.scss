@@ -1,0 +1,25 @@
+.Rest-Menu__Course-Container-List--Item{
+    list-style: none;
+}
+
+.Rest-Menu__Course-Container-List--Item-Button{
+    background-color: #FFFFFF;
+    border: none;
+    text-align: left;
+}
+
+.Rest-Menu__Course-Container-Button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.Rest-Menu__Course-Container-Button-Title{
+    background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
+    color: white;
+    border: none;
+    margin-bottom: 75px;
+    margin-top: 25px;
+    padding: 15px 85px;
+    border-radius: 40px;
+}

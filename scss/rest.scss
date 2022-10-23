@@ -38,6 +38,7 @@
     justify-content: space-between;
     align-items: baseline;
     padding-bottom: 35px;
+    padding-top: 40px;
 }
 
 .Rest-Menu__Header-Container-Icon{
@@ -47,6 +48,12 @@
 .Rest-Menu__Header-Container-Title{
     font-family: 'Shrikhand', cursive;
     font-size: 40px;
+}
+
+.Rest-Menu__Course{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .Rest-Menu__Course-Container-Title{
