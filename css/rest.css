@@ -198,10 +198,14 @@ a:link {
   height: 50px;
 }
 
-.Rest-Home__Header-Container-Icon {
+.Rest-Home__Header-Container-Link {
   order: -1;
   font-size: 35px;
   color: #343434;
+}
+
+.Rest-Home__Header-Image-Container.Modified {
+  height: 725px;
 }
 
 .Rest-Menu {
