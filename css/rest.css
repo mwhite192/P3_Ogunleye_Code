@@ -140,6 +140,11 @@ a:link {
   box-shadow: 0px 5px 10px 2px #e0e0e0;
 }
 
+.Rest-Menu__Course-Container-List--Item-Button:hover .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon {
+  opacity: 1;
+  width: 15%;
+}
+
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
   font-weight: 500;
   font-size: 30px;
@@ -159,7 +164,30 @@ a:link {
 }
 
 .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon {
-  display: none;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 40px 18px 0px 33px;
+  transition-duration: 1s;
+  transition-property: width;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+
+.fa-solid.fa-check {
+  font-size: 20px;
+  margin-right: 0px;
+  padding: 5px 7px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: white;
 }
 
 .Rest-Menu__Course-Container-Button {
