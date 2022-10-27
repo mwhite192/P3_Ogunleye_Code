@@ -133,16 +133,9 @@ a:link {
   border-radius: 20px;
   padding: 15px 12px;
   background-color: #FFFFFF;
-  border: none;
   text-align: left;
   width: 100%;
   position: relative;
-  box-shadow: 0px 5px 10px 2px #e0e0e0;
-}
-
-.Rest-Menu__Course-Container-List--Item-Button:hover .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon {
-  opacity: 1;
-  width: 15%;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
@@ -161,6 +154,7 @@ a:link {
   position: absolute;
   right: 1rem;
   top: 3.5rem;
+  transition: right 1s;
 }
 
 .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon {
@@ -174,20 +168,28 @@ a:link {
   color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 40px 18px 0px 33px;
-  transition-duration: 1s;
   transition-property: width;
+  transition-duration: 1s;
   transition-timing-function: ease;
   opacity: 0;
 }
 
 .fa-solid.fa-check {
   font-size: 20px;
-  margin-right: 0px;
+  margin: 40px 18px 0px 33px;
   padding: 5px 7px;
   border: 1px solid white;
   border-radius: 50px;
   background: white;
+}
+
+.Rest-Menu__Course-Container-List--Item-Button:hover .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon {
+  opacity: 1;
+  width: 15%;
+}
+
+.Rest-Menu__Course-Container-List--Item-Button:hover .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
+  right: 15%;
 }
 
 .Rest-Menu__Course-Container-Button {
@@ -206,7 +208,7 @@ a:link {
   margin-left: 220px;
   padding: 18px 115px;
   border-radius: 40px;
-  box-shadow: 0px 5px 10px 2px #e0e0e0;
+  box-shadow: 0px 5px 10px 2px #aaaaaa;
 }
 
 .Rest-Home__Header {
@@ -254,9 +256,22 @@ a:link {
   padding-top: 45px;
 }
 
+.fa-solid.fa-heart {
+  margin-right: 0px;
+}
+
 .Rest-Menu__Header-Container-Icon {
   font-size: 35px;
-  padding-right: 27px;
+  position: absolute;
+  right: 1.9rem;
+  top: 3.5rem;
+  margin-right: 0px;
+  padding-right: 35px;
+}
+
+.Rest-Menu__Header-Container-Icon.Filled {
+  position: absolute;
+  opacity: 0;
 }
 
 .Rest-Menu__Header-Container-Title {
@@ -278,6 +293,13 @@ a:link {
   font-weight: 400;
 }
 
+.Rest-Menu__Header-Container-Icon:hover {
+  opacity: 1;
+  background-image: linear-gradient(180deg, #9356DC, #FF79DA);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
 .Rest-Menu__Course-Container-Title:after {
   content: "";
   display: block;
@@ -293,4 +315,7 @@ a:link {
 .Rest-Menu__Course-Container-List--Item {
   list-style: none;
   margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 2px #e0e0e0;
+  border-radius: 20px;
 }
