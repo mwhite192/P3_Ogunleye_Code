@@ -18,8 +18,15 @@
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle{
+    width: 100%;
     font-size: 25px;
     font-weight: lighter;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price{
@@ -57,18 +64,6 @@
     background: white;
 }
 
-// transition stylings for the 'dish selection' check
-.Rest-Menu__Course-Container-List--Item-Button:hover 
-.Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon{
-    opacity: 1;
-    width: 15%;
-}
-
-.Rest-Menu__Course-Container-List--Item-Button:hover 
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price{
-    right: 15%;
-}
-
 // restaurant 'order' button stylings
 .Rest-Menu__Course-Container-Button{
     font-family: 'Roboto', sans-serif;
@@ -88,5 +83,25 @@
     border-radius: 40px;
     box-shadow: 0px 5px 10px 2px #aaaaaa;  
 }
+
+// transition stylings for the 'dish selection' check
+.Rest-Menu__Course-Container-List--Item-Button:hover 
+.Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon{
+    opacity: 1;
+    width: 15%;
+}
+
+.Rest-Menu__Course-Container-List--Item-Button:hover 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price{
+    right: 15%;
+}
+
+.Rest-Menu__Course-Container-List--Item-Button:hover 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle{
+    width: 55%;
+}
+  
+
+
 
 
