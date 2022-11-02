@@ -4,6 +4,12 @@
 @import "../components/rest-cards";     //imports all the stylings for the restaurant cards            
 
 // all stylings pertaining to the home page
+.Home-Container{
+    position: relative;
+    opacity: 0;
+    animation: home 1.5s linear 8s forwards;
+}
+
 .Home-Header{
     display: flex;
     flex-direction: column;

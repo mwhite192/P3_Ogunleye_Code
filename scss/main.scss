@@ -1,8 +1,9 @@
 // all imports needed for global styling
-@import "./base/reset";       //imports all browser resets
-@import "./utils/variables";  //imports all global variables
-@import "./base/typography";  //imports all font global stylings
-@import "./layout/footer";    //imports all styles for the footer
+@import "./base/reset";                 //imports all browser resets
+@import "./utils/variables";            //imports all global variables
+@import "./base/typography";            //imports all font global stylings
+@import "./layout/footer";              //imports all styles for the footer
+@import "./abstracts/loader-animation"  //imports the style for the loader
 
 
 
