@@ -79,34 +79,53 @@
     border: none;
     margin-bottom: 100px;
     margin-top: 45px;
-    margin-left: 220px;
+    margin-left: 200px;
     padding: 18px 115px;
     border-radius: 40px;
-    box-shadow: 0px 5px 10px 2px #aaaaaa;  
+    box-shadow: 0px 5px 5px 2px #b8b8b8;  
 }
 
 // transition stylings for the 'dish selection' check
-.Rest-Menu__Course-Container-List--Item-Button:hover 
+.Rest-Menu__Course-Container-List--Item-Button:hover
+.Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon,
+.Rest-Menu__Course-Container-List--Item-Button:focus
+.Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon,
+.Rest-Menu__Course-Container-List--Item-Button:focus-visible
 .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon{
     opacity: 1;
     width: 15%;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button:hover 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price,
+.Rest-Menu__Course-Container-List--Item-Button:focus
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price,
+.Rest-Menu__Course-Container-List--Item-Button:focus-visible 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price{
     right: 15%;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button:hover 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle,
+.Rest-Menu__Course-Container-List--Item-Button:focus 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle,
+.Rest-Menu__Course-Container-List--Item-Button:focus-visible 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle{
     width: 55%;
 }
 
 // animation for dishes animated by group
 .Rest-Menu__Course-Container-List--Item{
-    animation: fadeInUp 500ms ease-in-out calc(var(--animation-order) * 250ms) both;
+    animation: fadeInUp 500ms ease-out both;
+    //the 'for' loop staggers the button animation individually for each group  
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: calc(1000ms + ($i * 250ms));
+    }
 }
-
+}
+//the 'keyframes' below outline the actual animation for  
+//each individual dish within each group on each menu
 @keyframes fadeInUp{
     0%{
         opacity: 0;
