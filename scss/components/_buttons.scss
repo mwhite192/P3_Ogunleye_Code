@@ -13,11 +13,11 @@ $secondary_color: #FF79DA;
     box-shadow: 0px 5px 5px 2px #b8b8b8;
 }
 
-.Home-Info__Btn-Title:hover{
-    opacity: 0.7;
-    box-shadow: 5px 8px 15px #3d3d3d;
-    cursor: pointer;
-}
+ .Home-Info__Btn-Title:hover{
+     box-shadow: 5px 8px 15px #3d3d3d;
+     opacity: 0.8;
+     cursor: pointer;
+ }
 
 .Home-Instruct__Btn{
     font-family: 'Roboto', sans-serif;
@@ -41,12 +41,15 @@ $secondary_color: #FF79DA;
 }
 
 .Home-Instruct__Btn-Container-Btn:hover{
-    box-shadow: 5px 8px 15px #3d3d3d;
     cursor: pointer; 
+    box-shadow: 5px 8px 15px #3d3d3d;
+    background-color: #F5EDFE;
+    .Home-Instruct__Btn-Container-Icon{
+        color: #8354C9;
+    } 
 }
 
 .Home-Instruct__Btn--Item:hover{
-    opacity: 0.5;
     transform: translateY(-2px);
 }
 
@@ -57,14 +60,6 @@ $secondary_color: #FF79DA;
     padding-left: 30px;
     position: relative;
     font-size: 30px;
-}
-
-.Home-Instruct__Btn-Container-Btn.Color{
-    background-color: #F4EDFE;
-}
-
-.Home-Instruct__Btn-Container-Icon.Color{
-    color: #8354C9;
 }
 
 

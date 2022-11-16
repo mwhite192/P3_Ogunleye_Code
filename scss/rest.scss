@@ -3,6 +3,7 @@
 @import "./components/rest-buttons";   //imports rest menu page button stylings
 @import "./utils/variables";           //imports all variables needed to style rest menu page
 
+
 // all stylings pertaining to the rest menu page
 .Rest-Home__Header{
     display: flex;
@@ -95,6 +96,11 @@
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+// .Rest-Card__Link a.click{
+//     display: flex;
+//     flex-basis: 40%;
+// }
 
 //the following code allows me to adjust the length
 //of the border under the Rest-Menu__Course-Container-Title

@@ -191,8 +191,8 @@ a:link {
 }
 
 .Home-Info__Btn-Title:hover {
-  opacity: 0.7;
   box-shadow: 5px 8px 15px #3d3d3d;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -218,12 +218,15 @@ a:link {
 }
 
 .Home-Instruct__Btn-Container-Btn:hover {
-  box-shadow: 5px 8px 15px #3d3d3d;
   cursor: pointer;
+  box-shadow: 5px 8px 15px #3d3d3d;
+  background-color: #F5EDFE;
+}
+.Home-Instruct__Btn-Container-Btn:hover .Home-Instruct__Btn-Container-Icon {
+  color: #8354C9;
 }
 
 .Home-Instruct__Btn--Item:hover {
-  opacity: 0.5;
   transform: translateY(-2px);
 }
 
@@ -234,14 +237,6 @@ a:link {
   padding-left: 30px;
   position: relative;
   font-size: 30px;
-}
-
-.Home-Instruct__Btn-Container-Btn.Color {
-  background-color: #F4EDFE;
-}
-
-.Home-Instruct__Btn-Container-Icon.Color {
-  color: #8354C9;
 }
 
 .Rest-Card {
@@ -418,6 +413,12 @@ a:link {
 }
 .Home-Instruct__Header {
   font-size: 35px;
+}
+
+.Rest-Card__Container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .Custom-Counter {

@@ -3,6 +3,7 @@
 @import "../components/_buttons.scss";  //imports home page button stylings
 @import "../components/rest-cards";     //imports all the stylings for the restaurant cards            
 
+
 // all stylings pertaining to the home page
 .Home-Container{
     position: relative;
@@ -73,6 +74,12 @@
     }
 }
 
+.Rest-Card__Container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 // the following styling is used to style the
 // the number 'bullets' in the ordered list '<ol>'
 .Custom-Counter {
@@ -94,6 +101,7 @@
     border-radius: 50%;
     position: absolute;
   }
+
 // --> end of styling for the number 'bullets'
 // in the ordered list '<ol>'
 
