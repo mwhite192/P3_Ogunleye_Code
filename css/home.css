@@ -355,12 +355,20 @@ a:link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
 }
 .Home-Header__Image {
   height: 45px;
   margin-top: 40px;
   margin-bottom: 5px;
+}
+
+.Home-Header__Image-Container {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 5px 2px #b8b8b8;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
 .Home-Header__Location {
@@ -370,9 +378,9 @@ a:link {
   gap: 30px;
   justify-content: center;
   align-items: baseline;
+  margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 3px solid #cecece;
 }
 
 .Home__Location--Icon {
