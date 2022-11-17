@@ -136,3 +136,29 @@
         opacity: 1;
     }
 }
+
+// correction stylings for mobile mockup
+@media screen and (min-width: 340px) and (max-width: 675){
+    .Rest-Menu__Course-Container-Button-Title{
+        margin-left: 0px;
+        padding: 18px 75px;
+        font-size: 15px;
+    }
+
+    .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title,
+    .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price,
+    .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle{
+        font-size: 15px;
+    }
+
+    .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price{
+        right: 0.5rem;
+        top: 2.1rem;
+        padding-right: 45px;
+    } 
+
+    .fa-solid.fa-check{
+        font-size: 15px;
+        margin: 28px 18px 0px 6px;
+    }
+}

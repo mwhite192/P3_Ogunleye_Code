@@ -11,9 +11,8 @@
 }
 
 .Rest-Home__Header-Container{
-    margin-left: 75px;
     display: flex;
-    gap: 123px;
+    justify-content: space-around;
     padding-bottom: 15px;
     padding-top: 30px
 }
@@ -123,4 +122,39 @@
     box-shadow: 0px 5px 10px 2px #e0e0e0;
     border-radius: 20px;
 }
+
+// correction stylings for mobile mockup
+@media screen and (min-width: 340px) and (max-width: 675){
+    .Rest-Home__Header-Container-Image{
+        height: 40px;
+    }
+
+    .Rest-Home__Header-Container-Link{
+        font-size: 30px;
+    }
+
+    .Rest-Menu{
+        margin-top: -65px;
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .Rest-Menu__Header-Container-Title,
+    .Rest-Menu__Header-Container-Icon{
+        font-size: 25px;
+    }
+
+    .Rest-Menu__Header-Container-Icon{
+        right: 0.9rem;
+        top: 3rem;
+    }
+
+    .Rest-Menu__Course-Container-Title{
+        font-size: 20px;
+    }
+}
+
+
 
