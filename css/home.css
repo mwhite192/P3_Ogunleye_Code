@@ -44,7 +44,7 @@ a:not([class]) {
 
 /* A elements unvisited text color is black */
 a:visited {
-  color: black;
+  color: blue;
 }
 
 /* Make images easier to work with */
@@ -231,7 +231,7 @@ a:link {
 
 .Home-Instruct__Btn-Container-Btn:hover {
   cursor: pointer;
-  box-shadow: 5px 8px 15px #3d3d3d;
+  box-shadow: 5px 8px 15px #adadad;
   background-color: #F5EDFE;
 }
 .Home-Instruct__Btn-Container-Btn:hover .Home-Instruct__Btn-Container-Icon {
@@ -528,5 +528,40 @@ a:link {
   }
   .Rest-Card__Link-Container-Description-Icon {
     font-size: 32px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .Rest-Card__Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 0px;
+  }
+  .Rest-Card__Link {
+    flex-basis: 50%;
+  }
+  .Rest-Card__Link-Container-Image-Container {
+    height: 250px;
+  }
+  .Rest-Card__Link-Container-Image-Container-Image {
+    object-position: 55% 0%;
+  }
+  .Rest-Card__Link-Container-Description-Title {
+    font-size: 25px;
+  }
+  .Rest-Card__Link-Container-Description-Icon {
+    font-size: 35px;
+    bottom: 2.7rem;
+    right: 1.7rem;
+  }
+  .Rest-Card__Link-Container-Description-Location {
+    font-size: 20px;
+  }
+  .Rest-Card__Link-Container-Image-Container-Banner-Title {
+    font-size: 18px;
+    padding: 8px 45px;
+    top: 1.2rem;
+    right: 1rem;
   }
 }

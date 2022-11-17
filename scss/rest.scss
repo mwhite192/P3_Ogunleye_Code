@@ -18,27 +18,49 @@
 }
 
 .Rest-Home__Header-Container-Image{
-    height: 50px;
+    height: 40px;
+
+    @media screen and (min-width: 640px) and (max-width: 768px){
+        height: 48px;
+    }
 }
 
 .Rest-Home__Header-Container-Link{
     order: -1;
-    font-size: 35px;
-    color: #343434;
+    font-size: 30px;
+    //color: #343434;
+    position: absolute;
+    left: 1rem;
+
+    @media screen and (min-width: 640px) and (max-width: 768px){
+        font-size: 35px;
+    }
 }
 
 .Rest-Home__Header-Image-Container.Modified{
     height: 725px;
 }
 
+// the below line of code removes the right margin on
+// the solid heart icon
+.fa-solid.fa-heart{
+    margin-right: 0px;
+}
+
 .Rest-Menu{
     background-color: #F6F6F6;
-    padding-left: 40px;
-    padding-right: 40px;
     position: relative;
-    margin-top: -103px;
-    border-top-right-radius: 80px;
-    border-top-left-radius: 80px;
+    margin-top: -65px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media screen and (min-width: 640px) and (max-width: 768px){
+        margin-top: -125px;
+        border-top-right-radius: 80px;
+        border-top-left-radius: 80px;
+    }
 }
 
 .Rest-Menu__Header-Container{
@@ -49,17 +71,23 @@
     padding-top: 45px;
 }
 
-// the below line of code removes the right margin on
-// the solid heart icon
-.fa-solid.fa-heart{
-    margin-right: 0px;
+.Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon{
+    font-size: 25px;
+
+    @media screen and (min-width: 640px) and (max-width: 768px){
+        font-size: 45px;
+    }
+}
+
+.Rest-Menu__Header-Container-Title{
+    font-family: 'Shrikhand', cursive;
 }
 
 .Rest-Menu__Header-Container-Icon{
-    font-size: 35px;
     position: absolute;
-    right: 1.9rem;
-    top: 3.5rem;
+    right: 0.9rem;
+    top: 3rem;
     margin-right: 0px;
     padding-right: 35px;
 }
@@ -67,11 +95,6 @@
 .Rest-Menu__Header-Container-Icon.Filled{
     position: absolute;
     opacity: 0;
-}
-
-.Rest-Menu__Header-Container-Title{
-    font-family: 'Shrikhand', cursive;
-    font-size: 48px;
 }
 
 .Rest-Menu__Course{
@@ -83,9 +106,13 @@
 .Rest-Menu__Course-Container-Title{
     display: inline-block;
     color: #7C7C7C;
-    font-size: 29px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+
+    @media screen and (min-width: 640px) and (max-width: 768px){
+        font-size: 30px;
+    }
 }
 
 .Rest-Menu__Header-Container-Icon:hover{
@@ -118,51 +145,6 @@
     border-radius: 20px;
 }
 
-// correction stylings for mobile mockup{
-@media screen and (min-width: 340px) and (max-width: 447px){
-    .Rest-Home__Header-Container-Image{
-        height: 40px;
-    }
-
-    .Rest-Home__Header-Container-Link{
-        font-size: 30px;
-    }
-
-    .Rest-Menu{
-        margin-top: -65px;
-        border-top-right-radius: 60px;
-        border-top-left-radius: 60px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .Rest-Menu__Header-Container-Title,
-    .Rest-Menu__Header-Container-Icon{
-        font-size: 25px;
-    }
-
-    .Rest-Menu__Header-Container-Icon{
-        right: 0.9rem;
-        top: 3rem;
-    }
-
-    .Rest-Menu__Course-Container-Title{
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 448px) and (max-width: 540px){
-    .Rest-Menu__Header-Container-Title,
-    .Rest-Menu__Header-Container-Icon{
-        font-size: 30px;
-    }
-
-    .Rest-Menu__Header-Container-Icon{
-        right: 0.9rem;
-        top: 3rem;
-    }
-    
-}
 
 
 

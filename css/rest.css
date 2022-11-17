@@ -44,7 +44,7 @@ a:not([class]) {
 
 /* A elements unvisited text color is black */
 a:visited {
-  color: black;
+  color: blue;
 }
 
 /* Make images easier to work with */
@@ -203,15 +203,24 @@ a:link {
   position: relative;
 }
 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title,
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price,
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
+  font-size: 20px;
+}
+
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
   font-weight: 500;
-  font-size: 30px;
+}
+@media screen and (min-width: 640px) {
+  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
+    font-size: 33px;
+  }
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
   width: 100%;
-  font-size: 25px;
-  padding-right: 75px;
+  padding-right: 45px;
   font-weight: lighter;
   white-space: nowrap;
   overflow: hidden;
@@ -220,19 +229,32 @@ a:link {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
+@media screen and (min-width: 640px) {
+  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
+    font-size: 27px;
+    padding-right: 75px;
+  }
+}
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
-  font-size: 25px;
   padding-right: 8px;
   position: absolute;
-  right: 1rem;
-  top: 3.5rem;
+  right: 0.5rem;
+  top: 2.8rem;
   transition: right 1s;
+}
+@media screen and (min-width: 640px) {
+  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
+    font-size: 30px;
+    right: 1.5rem;
+    top: 3.8rem;
+  }
 }
 
 .Rest-Menu__Course-Container--Item-Button-Info-Container-Selection-Icon {
   height: 100%;
   width: 0%;
+  text-align: center;
   position: absolute;
   right: 0;
   top: 0;
@@ -248,19 +270,31 @@ a:link {
 }
 
 .fa-solid.fa-check {
-  font-size: 20px;
-  margin: 40px 18px 0px 33px;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 2px;
   padding: 5px 7px;
   border: 1px solid white;
   border-radius: 50px;
   background: white;
 }
+@media screen and (min-width: 640px) {
+  .fa-solid.fa-check {
+    font-size: 22px;
+    margin-top: 45px;
+  }
+}
 
 .Rest-Menu__Course-Container-Button {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
+  font-size: 15px;
   padding-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 640px) {
+  .Rest-Menu__Course-Container-Button {
+    font-size: 25px;
+  }
 }
 
 .Rest-Menu__Course-Container-Button-Title {
@@ -270,7 +304,7 @@ a:link {
   border: none;
   margin-bottom: 100px;
   margin-top: 45px;
-  padding: 18px 100px;
+  padding: 18px 75px;
   border-radius: 40px;
   box-shadow: 0px 5px 5px 2px #b8b8b8;
 }
@@ -337,26 +371,6 @@ a:link {
     opacity: 1;
   }
 }
-@media screen and (min-width: 340px) and (max-width: 447px) {
-  .Rest-Menu__Course-Container-Button-Title {
-    padding: 18px 75px;
-  }
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title,
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price,
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-    font-size: 20px;
-  }
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-    padding-right: 45px;
-  }
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
-    right: 0.5rem;
-    top: 2.8rem;
-  }
-  .fa-solid.fa-check {
-    margin: 28px 18px 0px 6px;
-  }
-}
 .Rest-Home__Header {
   display: flex;
   flex-direction: column;
@@ -370,27 +384,49 @@ a:link {
 }
 
 .Rest-Home__Header-Container-Image {
-  height: 50px;
+  height: 40px;
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .Rest-Home__Header-Container-Image {
+    height: 48px;
+  }
 }
 
 .Rest-Home__Header-Container-Link {
   order: -1;
-  font-size: 35px;
-  color: #343434;
+  font-size: 30px;
+  position: absolute;
+  left: 1rem;
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .Rest-Home__Header-Container-Link {
+    font-size: 35px;
+  }
 }
 
 .Rest-Home__Header-Image-Container.Modified {
   height: 725px;
 }
 
+.fa-solid.fa-heart {
+  margin-right: 0px;
+}
+
 .Rest-Menu {
   background-color: #F6F6F6;
-  padding-left: 40px;
-  padding-right: 40px;
   position: relative;
-  margin-top: -103px;
-  border-top-right-radius: 80px;
-  border-top-left-radius: 80px;
+  margin-top: -65px;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .Rest-Menu {
+    margin-top: -125px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+  }
 }
 
 .Rest-Menu__Header-Container {
@@ -401,15 +437,25 @@ a:link {
   padding-top: 45px;
 }
 
-.fa-solid.fa-heart {
-  margin-right: 0px;
+.Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon {
+  font-size: 25px;
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon {
+    font-size: 45px;
+  }
+}
+
+.Rest-Menu__Header-Container-Title {
+  font-family: "Shrikhand", cursive;
 }
 
 .Rest-Menu__Header-Container-Icon {
-  font-size: 35px;
   position: absolute;
-  right: 1.9rem;
-  top: 3.5rem;
+  right: 0.9rem;
+  top: 3rem;
   margin-right: 0px;
   padding-right: 35px;
 }
@@ -417,11 +463,6 @@ a:link {
 .Rest-Menu__Header-Container-Icon.Filled {
   position: absolute;
   opacity: 0;
-}
-
-.Rest-Menu__Header-Container-Title {
-  font-family: "Shrikhand", cursive;
-  font-size: 48px;
 }
 
 .Rest-Menu__Course {
@@ -433,9 +474,14 @@ a:link {
 .Rest-Menu__Course-Container-Title {
   display: inline-block;
   color: #7C7C7C;
-  font-size: 29px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .Rest-Menu__Course-Container-Title {
+    font-size: 30px;
+  }
 }
 
 .Rest-Menu__Header-Container-Icon:hover {
@@ -464,41 +510,4 @@ a:link {
   overflow: hidden;
   box-shadow: 0px 5px 10px 2px #e0e0e0;
   border-radius: 20px;
-}
-
-@media screen and (min-width: 340px) and (max-width: 447px) {
-  .Rest-Home__Header-Container-Image {
-    height: 40px;
-  }
-  .Rest-Home__Header-Container-Link {
-    font-size: 30px;
-  }
-  .Rest-Menu {
-    margin-top: -65px;
-    border-top-right-radius: 60px;
-    border-top-left-radius: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 25px;
-  }
-  .Rest-Menu__Header-Container-Icon {
-    right: 0.9rem;
-    top: 3rem;
-  }
-  .Rest-Menu__Course-Container-Title {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 448px) and (max-width: 540px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 30px;
-  }
-  .Rest-Menu__Header-Container-Icon {
-    right: 0.9rem;
-    top: 3rem;
-  }
 }
