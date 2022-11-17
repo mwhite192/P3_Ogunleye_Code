@@ -12,7 +12,7 @@
 
 .Rest-Home__Header-Container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 15px;
     padding-top: 30px
 }
@@ -96,11 +96,6 @@
     -webkit-background-clip: text;
 }
 
-// .Rest-Card__Link a.click{
-//     display: flex;
-//     flex-basis: 40%;
-// }
-
 //the following code allows me to adjust the length
 //of the border under the Rest-Menu__Course-Container-Title
 .Rest-Menu__Course-Container-Title:after {
@@ -123,8 +118,8 @@
     border-radius: 20px;
 }
 
-// correction stylings for mobile mockup
-@media screen and (min-width: 340px) and (max-width: 675){
+// correction stylings for mobile mockup{
+@media screen and (min-width: 340px) and (max-width: 447px){
     .Rest-Home__Header-Container-Image{
         height: 40px;
     }
@@ -154,6 +149,19 @@
     .Rest-Menu__Course-Container-Title{
         font-size: 20px;
     }
+}
+
+@media screen and (min-width: 448px) and (max-width: 540px){
+    .Rest-Menu__Header-Container-Title,
+    .Rest-Menu__Header-Container-Icon{
+        font-size: 30px;
+    }
+
+    .Rest-Menu__Header-Container-Icon{
+        right: 0.9rem;
+        top: 3rem;
+    }
+    
 }
 
 
