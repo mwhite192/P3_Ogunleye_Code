@@ -114,6 +114,51 @@
 // --> end of styling for the number 'bullets'
 // in the ordered list '<ol>'
 
+// correction styling for mobile mockup
+@media  screen and (min-width: 340px) and (max-width: 447px) {
+    .Home-Info__Subheader,
+    .Home-Header__Location{
+        font-size: 22px;
+    }
+
+    .Home-Header__Location--Icon{
+        font-size: 25px;
+    }
+
+    .Home-Header__Image{
+        height: 42px;
+    }
+
+    .Home__Location--Location,
+    .Home-Info__Header{
+        margin-right: 0px;
+    }
+
+    .Home-Instruct__Header,
+    .Rest-Card__Header,
+    .Home-Info__Header{
+        font-size: 32px;
+    }
+
+    .Rest-Card__Link-Container-Image-Container-Image{
+        height: 200px;
+    }
+
+    .Rest-Card__Link-Container-Image-Container-Banner-Title{
+        font-size: 18px;
+        right: 1rem;
+        padding: 8px 40px;
+    }
+
+    .Rest-Card__Link-Container-Description-Title,
+    .Rest-Card__Link-Container-Description-Location{
+        font-size: 17px;
+    }
+
+    .Rest-Card__Link-Container-Description-Icon{
+        font-size: 32px;
+    }
+}
 
 
 

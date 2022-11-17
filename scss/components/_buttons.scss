@@ -62,5 +62,42 @@ $secondary_color: #FF79DA;
     font-size: 30px;
 }
 
+// correction stylings for mobile mockup
+@media screen and (min-width: 340px) and (max-width: 447px){
+    .Home-Info__Btn-Title{
+        margin-left: 10px;
+    } 
 
+    .Home-Info__Btn-Title,
+    .Home-Instruct__Btn-Container-Btn{
+        font-size: 15px;
+    }
+
+    .Home-Instruct__Btn-Container-Icon{
+        padding-right: 0px;
+        margin-right: 0px;
+        font-size: 25px;
+        padding-left: 16px;
+    }
+}
+
+@media screen and (min-width: 448px) and (max-width: 608px){
+    .Home-Instruct__Btn-Container-Btn{
+        padding: 30px 5px;
+        font-size: 22px;
+    }
+
+    .Home-Instruct__Btn-Container-Icon{
+        padding-left: 25px;
+        padding-right: 0px;
+        margin-right: 0px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 608px){
+    .Home-Instruct__Btn-Container-Btn{
+        width: 88%;
+    }
+}
 
