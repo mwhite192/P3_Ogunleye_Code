@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     &__Image{
-        height: 45px;
+        height: 42px;
         margin-top: 40px;
         margin-bottom: 5px;
     }
@@ -33,22 +33,12 @@
 
 .Home-Header__Location{
     background-color: #eaeaea;
-    font-size: 25px;
+    font-size: 23px;
     display: flex;
-    gap: 30px;
+    gap: 15px;
     justify-content: center;
     align-items: baseline;
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.Home__Location--Icon{
-    font-size: 28px;
-}
-
-.Home__Location--Location{
-    margin-right: 50px;
+    padding: 20px 45px 20px 0px;
 }
 
 .Home-Info{
@@ -56,18 +46,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 55px;
+    gap: 25px;
     padding-top: 45px;
     padding-bottom: 90px;
     &__Header{
-        font-size: 38px;
-        margin-right: 30px;
+        font-size: 25px;
     }
     &__SubHeader{
         text-align: center;
         font-weight: 300;
-        font-size: 30px;
-        margin-left: 20px;
+        font-size: 18px;
         line-height: 35px;
     }
 }
@@ -79,14 +67,38 @@
     flex-direction: column;
     gap: 60px;
     &__Header{
-         font-size: 35px;
+         font-size: 30px;
     }
+}
+
+.Rest-Card__Header{
+    font-size: 32px;
 }
 
 .Rest-Card__Container{
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+.Rest-Card__Link-Container-Image-Container-Image{
+    height: 200px;
+}
+
+.Rest-Card__Link-Container-Image-Container-Banner-Title{
+    font-size: 18px;
+    right: 1rem;
+    padding: 8px 40px;
+}
+
+.Rest-Card__Link-Container-Description-Title,
+.Rest-Card__Link-Container-Description-Location{
+    font-size: 15px;
+}
+
+.Rest-Card__Link-Container-Description-Icon{
+    font-size: 30px;
+    bottom: 1.8rem;
 }
 
 // the following styling is used to style the
@@ -114,54 +126,8 @@
 // --> end of styling for the number 'bullets'
 // in the ordered list '<ol>'
 
-// correction styling for mobile mockup
-@media  screen and (min-width: 340px) and (max-width: 447px) {
-    .Home-Info__Subheader,
-    .Home-Header__Location{
-        font-size: 22px;
-    }
-
-    .Home-Header__Location--Icon{
-        font-size: 25px;
-    }
-
-    .Home-Header__Image{
-        height: 42px;
-    }
-
-    .Home__Location--Location,
-    .Home-Info__Header{
-        margin-right: 0px;
-    }
-
-    .Home-Instruct__Header,
-    .Rest-Card__Header,
-    .Home-Info__Header{
-        font-size: 32px;
-    }
-
-    .Rest-Card__Link-Container-Image-Container-Image{
-        height: 200px;
-    }
-
-    .Rest-Card__Link-Container-Image-Container-Banner-Title{
-        font-size: 18px;
-        right: 1rem;
-        padding: 8px 40px;
-    }
-
-    .Rest-Card__Link-Container-Description-Title,
-    .Rest-Card__Link-Container-Description-Location{
-        font-size: 17px;
-    }
-
-    .Rest-Card__Link-Container-Description-Icon{
-        font-size: 32px;
-    }
-}
-
 //stylings for tablet layout
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px){
     .Rest-Card__Container{
         display: flex;
         flex-direction: row;
