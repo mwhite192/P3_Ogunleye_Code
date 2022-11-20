@@ -79,10 +79,13 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+    a.Rest-Card__Link{
+        color: black;
+    }
 }
 
 .Rest-Card__Link-Container-Image-Container-Image{
-    height: 200px;
+    height: 320px;
 }
 
 .Rest-Card__Link-Container-Image-Container-Banner-Title{

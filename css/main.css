@@ -84,10 +84,6 @@ p, h1, h2 {
   font-family: "Shrikhand", cursive;
 }
 
-a:link {
-  color: white;
-}
-
 .Home__Footer {
   color: white;
   background-color: #353535;
@@ -121,6 +117,9 @@ a:link {
   padding-bottom: 2px;
   font-family: "Roboto", sans-serif;
   font-size: 23px;
+}
+.Home__Footer-Contact-Section-List-Item a.Home__Footer-Contact-Section-List-Item--link {
+  color: white;
 }
 
 .Home__Footer-Contact-Section-List-Item--link {

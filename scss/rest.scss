@@ -19,10 +19,16 @@
 
 .Rest-Home__Header-Container-Image{
     height: 40px;
+    
 
     @media screen and (min-width: 640px) and (max-width: 768px){
         height: 48px;
     }
+}
+
+.Rest-Home__Header-Image-Container-Image{
+    height: 345px;
+    width: 100%;
 }
 
 .Rest-Home__Header-Container-Link{
@@ -35,10 +41,6 @@
     @media screen and (min-width: 640px) and (max-width: 768px){
         font-size: 35px;
     }
-}
-
-.Rest-Home__Header-Image-Container.Modified{
-    height: 725px;
 }
 
 // the below line of code removes the right margin on

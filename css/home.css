@@ -84,10 +84,6 @@ p, h1, h2 {
   font-family: "Shrikhand", cursive;
 }
 
-a:link {
-  color: white;
-}
-
 .Home__Footer {
   color: white;
   background-color: #353535;
@@ -121,6 +117,9 @@ a:link {
   padding-bottom: 2px;
   font-family: "Roboto", sans-serif;
   font-size: 23px;
+}
+.Home__Footer-Contact-Section-List-Item a.Home__Footer-Contact-Section-List-Item--link {
+  color: white;
 }
 
 .Home__Footer-Contact-Section-List-Item--link {
@@ -213,6 +212,10 @@ a:link {
   border: none;
   border-radius: 33px;
   padding: 25px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  text-overflow: ellipsis;
   font-weight: bold;
   box-shadow: 0px 5px 10px 2px #d3d3d3;
 }
@@ -237,23 +240,6 @@ a:link {
   padding-left: 15px;
 }
 
-@media screen and (min-width: 448px) and (max-width: 608px) {
-  .Home-Instruct__Btn-Container-Btn {
-    padding: 30px 5px;
-    font-size: 22px;
-  }
-  .Home-Instruct__Btn-Container-Icon {
-    padding-left: 25px;
-    padding-right: 0px;
-    margin-right: 0px;
-    font-size: 25px;
-  }
-}
-@media screen and (min-width: 340px) and (max-width: 608px) {
-  .Home-Instruct__Btn-Container-Btn {
-    width: 88%;
-  }
-}
 .Rest-Card {
   background-color: #F6F6F6;
   display: flex;
@@ -435,9 +421,12 @@ a:link {
   flex-direction: column;
   gap: 35px;
 }
+.Rest-Card__Container a.Rest-Card__Link {
+  color: black;
+}
 
 .Rest-Card__Link-Container-Image-Container-Image {
-  height: 200px;
+  height: 320px;
 }
 
 .Rest-Card__Link-Container-Image-Container-Banner-Title {
