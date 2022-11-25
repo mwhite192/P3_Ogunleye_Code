@@ -11,6 +11,10 @@ $secondary_color: #FF79DA;
     padding: 15px 40px;
     background-image: linear-gradient($secondary_color, $primary_color);
     box-shadow: 0px 5px 5px 2px #b8b8b8;
+
+    @media screen and (min-width: 540px){
+        font-size: 25px;
+    }
 }
 
  .Home-Info__Btn-Title:hover{
@@ -39,8 +43,15 @@ $secondary_color: #FF79DA;
     overflow: hidden;
     font-weight: bold;
     text-overflow: ellipsis;
-    font-weight: bold;
     box-shadow: 0px 5px 10px 2px #d3d3d3;
+
+    @media screen and (min-width: 540px){
+    display: flex;
+    gap: 35px;
+    align-items: baseline;
+    margin-top: -19px;
+    font-size: 25px;
+    }
 }
 
 .Home-Instruct__Btn-Container-Btn:hover{
@@ -61,6 +72,11 @@ $secondary_color: #FF79DA;
     position: relative;
     font-size: 25px;
     padding-left: 15px;
+
+    @media screen and (min-width: 540px){
+    font-size: 32px;
+    padding-left: 50px;
+    }
 }
 
 
