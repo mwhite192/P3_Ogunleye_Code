@@ -84,9 +84,9 @@
     flex-direction: column;
     gap: 60px;
     &__Header{
-         font-size: 30px;
+        font-size: 30px;
 
-         @media screen and (min-width: 540px){
+        @media screen and (min-width: 540px){
             font-size: 43px;
         }
     }
@@ -105,7 +105,7 @@
     flex-direction: column;
     gap: 35px;
     // tablet layout breakpoint
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 770px){
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -116,7 +116,7 @@
     a.Rest-Card__Link{
         color: black;
         // tablet layout breakpoint
-        @media screen and (min-width: 769px){
+        @media screen and (min-width: 770px){
             flex-basis: 50%;
         } 
     }
@@ -129,7 +129,7 @@
         height: 275px;
     }
     // tablet layout breakpoint
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 770px){
         object-position: 55% 0%;
     }
 }
@@ -145,7 +145,7 @@
         border-radius: 3px  
     }
     // tablet layout breakpoints
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 770px){
         font-size: 18px;
         padding: 8px 45px;
         top: 1.2rem;
@@ -158,7 +158,7 @@
     font-size: 15px;
 
     @media screen and (min-width: 540px){
-        font-size: 33px;
+        font-size: 25px;
     }
 }
 
@@ -172,9 +172,9 @@
         bottom: 2.8rem;
     }
     // tablet layout breakpoint
-    @media screen and (min-width: 769px){
-        font-size: 40px;
-        bottom: 3.7rem;
+    @media screen and (min-width: 770px){
+        font-size: 35px;
+        bottom: 2.5rem;
         right: 1.7rem;
     }
 }
@@ -205,16 +205,16 @@
 // in the ordered list '<ol>'
 
 //additional stylings for tablet layout 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 770px){
     .Rest-Card__Link-Container-Image-Container{
         height: 250px;
     }
 
     .Rest-Card__Link-Container-Description-Location{
-        font-size: 31px;
+        font-size: 24px;
     }
-
 }
+
 
 
 

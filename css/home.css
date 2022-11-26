@@ -229,7 +229,12 @@ p, h1, h2 {
     gap: 35px;
     align-items: baseline;
     margin-top: -19px;
-    font-size: 25px;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .Home-Instruct__Btn-Container-Btn {
+    width: 80%;
   }
 }
 
@@ -470,7 +475,7 @@ p, h1, h2 {
   flex-direction: column;
   gap: 35px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
   .Rest-Card__Container {
     display: flex;
     flex-direction: row;
@@ -482,7 +487,7 @@ p, h1, h2 {
 .Rest-Card__Container a.Rest-Card__Link {
   color: black;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
   .Rest-Card__Container a.Rest-Card__Link {
     flex-basis: 50%;
   }
@@ -496,7 +501,7 @@ p, h1, h2 {
     height: 275px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
   .Rest-Card__Link-Container-Image-Container-Image {
     object-position: 55% 0%;
   }
@@ -514,7 +519,7 @@ p, h1, h2 {
     border-radius: 3px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
   .Rest-Card__Link-Container-Image-Container-Banner-Title {
     font-size: 18px;
     padding: 8px 45px;
@@ -530,7 +535,7 @@ p, h1, h2 {
 @media screen and (min-width: 540px) {
   .Rest-Card__Link-Container-Description-Title,
 .Rest-Card__Link-Container-Description-Location {
-    font-size: 33px;
+    font-size: 25px;
   }
 }
 
@@ -544,10 +549,10 @@ p, h1, h2 {
     bottom: 2.8rem;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
   .Rest-Card__Link-Container-Description-Icon {
-    font-size: 40px;
-    bottom: 3.7rem;
+    font-size: 35px;
+    bottom: 2.5rem;
     right: 1.7rem;
   }
 }
@@ -573,11 +578,11 @@ p, h1, h2 {
   position: absolute;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
   .Rest-Card__Link-Container-Image-Container {
     height: 250px;
   }
   .Rest-Card__Link-Container-Description-Location {
-    font-size: 31px;
+    font-size: 24px;
   }
 }
