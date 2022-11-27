@@ -23,7 +23,7 @@
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title{
     font-weight: 500;
 
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 540px){
         font-size: 33px;
     }
 }
@@ -34,7 +34,7 @@
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 540px){
         font-size: 27px;
     }
 }
@@ -47,7 +47,7 @@
     overflow: hidden;
     text-overflow: ellipsis; 
 
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 540px){
         padding-right: 85px;
     }
 }
@@ -59,7 +59,7 @@
     top: 2.8rem;
     transition: right 1s;
 
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 540px){
         font-size: 30px;
         right: 1.5rem;
         top: 3.8rem;
@@ -93,7 +93,7 @@
     border-radius: 50px;
     background: white;
 
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 540px){
         font-size: 22px;
         margin-top: 45px;
     }
@@ -106,7 +106,7 @@
     padding-bottom: 20px;
     text-align: center;
 
-    @media screen and (min-width: 640px){
+    @media screen and (min-width: 540px){
         font-size: 25px;
     }
 }

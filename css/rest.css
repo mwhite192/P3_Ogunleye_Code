@@ -200,7 +200,7 @@ p, h1, h2 {
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
   font-weight: 500;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
     font-size: 33px;
   }
@@ -212,7 +212,7 @@ p, h1, h2 {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
     font-size: 27px;
   }
@@ -226,7 +226,7 @@ p, h1, h2 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title,
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
     padding-right: 85px;
@@ -240,7 +240,7 @@ p, h1, h2 {
   top: 2.8rem;
   transition: right 1s;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
     font-size: 30px;
     right: 1.5rem;
@@ -275,7 +275,7 @@ p, h1, h2 {
   border-radius: 50px;
   background: white;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .fa-solid.fa-check {
     font-size: 22px;
     margin-top: 45px;
@@ -288,7 +288,7 @@ p, h1, h2 {
   padding-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-Button {
     font-size: 25px;
   }
@@ -382,7 +382,7 @@ p, h1, h2 {
 .Rest-Home__Header-Container-Image {
   height: 40px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Home__Header-Container-Image {
     height: 48px;
   }
@@ -391,6 +391,12 @@ p, h1, h2 {
 .Rest-Home__Header-Image-Container-Image {
   height: 345px;
   width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 770px) {
+  .Rest-Home__Header-Image-Container-Image {
+    height: 500px;
+  }
 }
 
 .Rest-Home__Header-Container-Link {
@@ -399,7 +405,7 @@ p, h1, h2 {
   position: absolute;
   left: 1rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Home__Header-Container-Link {
     font-size: 35px;
   }
@@ -418,7 +424,7 @@ p, h1, h2 {
   padding-left: 30px;
   padding-right: 30px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu {
     margin-top: -75px;
     border-top-right-radius: 80px;
@@ -438,7 +444,7 @@ p, h1, h2 {
 .Rest-Menu__Header-Container-Icon {
   font-size: 25px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Header-Container-Title,
 .Rest-Menu__Header-Container-Icon {
     font-size: 45px;
@@ -475,7 +481,7 @@ p, h1, h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-Title {
     font-size: 30px;
   }
@@ -507,4 +513,10 @@ p, h1, h2 {
   overflow: hidden;
   box-shadow: 0px 5px 10px 2px #e0e0e0;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 770px) {
+  .Rest-Home__Header-Image-Container-Image.Modified {
+    object-position: bottom;
+  }
 }
