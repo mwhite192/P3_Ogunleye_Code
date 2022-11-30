@@ -264,6 +264,28 @@ p, h1, h2 {
   }
 }
 
+.Home-Instruct__Desktop-Btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+
+.Home-Instruct__Desktop-Btn--Btn {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .Home-Instruct__Desktop-Btn--Btn {
+    display: block;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    border-radius: 35px;
+    padding: 15px 40px;
+    box-shadow: 0px 5px 5px 2px #b8b8b8;
+  }
+}
+
 .Rest-Card {
   background-color: #F6F6F6;
   display: flex;
@@ -370,6 +392,11 @@ p, h1, h2 {
   -webkit-background-clip: text;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .Home-Container {
   position: relative;
   opacity: 0;
@@ -452,8 +479,17 @@ p, h1, h2 {
   flex-direction: column;
   gap: 60px;
 }
+@media screen and (min-width: 1025px) {
+  .Home-Instruct {
+    order: -1;
+  }
+}
+.Home-Instruct:hover .Home-Instruct__Desktop {
+  display: block;
+}
 .Home-Instruct__Header {
   font-size: 30px;
+  margin-bottom: 45px;
 }
 @media screen and (min-width: 540px) {
   .Home-Instruct__Header {
@@ -584,5 +620,13 @@ p, h1, h2 {
   }
   .Rest-Card__Link-Container-Description-Location {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .Home-Instruct__Desktop {
+    display: none;
+  }
+  .Home-Instruct__Header {
+    margin-bottom: 50px;
   }
 }

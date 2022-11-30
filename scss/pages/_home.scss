@@ -5,6 +5,11 @@
 
 
 // all stylings pertaining to the home page
+main{
+ display: flex;
+ flex-direction: column;
+}
+
 .Home-Container{
     position: relative;
     opacity: 0;
@@ -19,7 +24,7 @@
         height: 42px;
         margin-top: 40px;
         margin-bottom: 5px;
-
+        // mobile layout breakpoint
         @media screen and (min-width: 540px){
             height: 50px;
         }
@@ -43,8 +48,7 @@
     justify-content: center;
     align-items: baseline;
     padding: 20px 45px 20px 0px;
-
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 29px;
     }
@@ -60,7 +64,7 @@
     padding-bottom: 90px;
     &__Header{
         font-size: 25px;
-
+        // mobile layout breakpoint
         @media screen and (min-width: 540px){
             font-size: 45px;
         }
@@ -70,7 +74,7 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 35px;
-
+        // mobile layout breakpoint
         @media screen and (min-width: 540px){
             font-size: 29px;
         }
@@ -83,18 +87,33 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        order: -1;
+        //background-image: linear-gradient(to right top, #dcc8f4, #e3c4f4, #ecbff2, #f5baef, #ffb4ea); background-image: linear-gradient(to right top, #d1b8f0, #dbb3f0, #e6adef, #f2a7eb, #ffa0e5);background-image: linear-gradient(to left bottom, #d1b8f0, #dbb3f0, #e6adef, #f2a7eb, #ffa0e5);
+    }
+    &:hover{
+        .Home-Instruct__Desktop{
+            display: block;
+        }
+    }
     &__Header{
         font-size: 30px;
-
+        margin-bottom: 45px;
+        // mobile layout breakpoint
         @media screen and (min-width: 540px){
             font-size: 43px;
         }
+        // desktop layout breakpoint
+        // @media screen and (min-width: 1025px) {
+        //     color: white;
+        // }
     }
 }
 
 .Rest-Card__Header{
     font-size: 32px;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 43px;
     }
@@ -124,7 +143,7 @@
 
 .Rest-Card__Link-Container-Image-Container-Image{
     height: 200px;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         height: 275px;
     }
@@ -138,7 +157,7 @@
     font-size: 18px;
     right: 1rem;
     padding: 8px 40px;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 24px;
         padding: 8px 55px;
@@ -156,7 +175,7 @@
 .Rest-Card__Link-Container-Description-Title,
 .Rest-Card__Link-Container-Description-Location{
     font-size: 15px;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 25px;
     }
@@ -166,7 +185,7 @@
 .Rest-Card__Link-Container-Description-Icon{
     font-size: 30px;
     bottom: 1.8rem;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 45px;
         bottom: 2.8rem;
@@ -204,7 +223,7 @@
 // --> end of styling for the number 'bullets'
 // in the ordered list '<ol>'
 
-//additional stylings for tablet layout 
+// additional stylings for tablet layout 
 @media screen and (min-width: 770px){
     .Rest-Card__Link-Container-Image-Container{
         height: 250px;
@@ -214,6 +233,22 @@
         font-size: 24px;
     }
 }
+
+// additional stylings for desktop layout
+@media screen and (min-width: 1025px){
+    .Home-Instruct__Desktop{
+        display: none;
+    }
+
+    .Home-Instruct__Header{
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
 
 
 

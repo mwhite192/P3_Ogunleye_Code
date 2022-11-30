@@ -19,8 +19,7 @@
 
 .Rest-Home__Header-Container-Image{
     height: 40px;
-    
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         height: 48px;
     }
@@ -30,10 +29,21 @@
     height: 345px;
     width: 100%;
     object-fit: cover;
-
     // tablet layout breakpoint
     @media screen and (min-width: 770px){
         height: 500px;
+    }
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        height: 650px;      
+    }
+}
+
+.Rest-Home__Header-Image-Container-Image.Gourmand{
+    object-position: bottom;
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        object-position: 0% 40%;
     }
 }
 
@@ -43,7 +53,7 @@
     //color: #343434;
     position: absolute;
     left: 1rem;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 35px;
     }
@@ -63,7 +73,7 @@
     border-top-left-radius: 60px;
     padding-left: 30px;
     padding-right: 30px;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         margin-top: -75px;
         border-top-right-radius: 80px;
@@ -77,14 +87,9 @@
     align-items: baseline;
     padding-bottom: 35px;
     padding-top: 45px;
-}
-
-.Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon{
-    font-size: 25px;
-
-    @media screen and (min-width: 540px){
-        font-size: 45px;
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        padding: 60px 0px 85px 120px;
     }
 }
 
@@ -98,6 +103,10 @@
     top: 3rem;
     margin-right: 0px;
     padding-right: 35px;
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        padding-right: 140px;      
+    }
 }
 
 .Rest-Menu__Header-Container-Icon.Filled{
@@ -105,10 +114,28 @@
     opacity: 0;
 }
 
+.Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon{
+    font-size: 25px;
+    // mobile layout breakpoint
+    @media screen and (min-width: 540px){
+        font-size: 45px;
+    }
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        font-size: 55px;   
+    }
+}
+
 .Rest-Menu__Course{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    // desktop layout breakpoint
+    @media screen and (min-width: 1025px) {
+        flex-direction: row;
+        justify-content: center;           
+    }
 }
 
 .Rest-Menu__Course-Container-Title{
@@ -117,7 +144,7 @@
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-
+    // mobile layout breakpoint
     @media screen and (min-width: 540px){
         font-size: 30px;
     }
@@ -131,8 +158,8 @@
     -webkit-background-clip: text;
 }
 
-//the following code allows me to adjust the length
-//of the border under the Rest-Menu__Course-Container-Title
+// the following code allows programer to adjust the length
+// of the border under the Rest-Menu__Course-Container-Title
 .Rest-Menu__Course-Container-Title:after {
     content: ""; 
     display: block; 
@@ -151,12 +178,29 @@
     overflow: hidden;
     box-shadow: 0px 5px 10px 2px #e0e0e0;
     border-radius: 20px;
-}
+}// the is the end of the 'Container Header bottom border' code
 
-// additional stylings for tablet layout
-@media screen and (min-width: 770px){
-    .Rest-Home__Header-Image-Container-Image.Modified{
-        object-position: bottom;
+// additional styling for desktop layout
+@media screen and (min-width: 1025px) {
+    .Rest-Home__Header-Image-Container-Image.Full{
+        object-position: 0% 65%;
+    }
+
+    .Rest-Home__Header-Image-Container-Image.Enhanced{
+        object-position: 0% 60%;
+    }
+
+    .Rest-Home__Header-Image-Container-Image.Bastille{
+        object-position: 0% 80%;
+    }
+
+    .Rest-Home__Header-Container-Image.Gourmand{
+        object-position: 0% 40%;
+    }
+
+    .Rest-Menu__Course-Container{
+        width: 32%;
     }
 }
+
 
