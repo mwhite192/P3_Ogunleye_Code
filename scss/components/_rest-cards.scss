@@ -1,14 +1,15 @@
+@import "../utils/mixins";    //imports mixins
+@import "../base/typography";  //imports all font rules
+
 .Rest-Card{
+    @include layout;
     background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
     align-items: stretch;
     gap: 30px;
     padding-bottom: 90px;
     &__Header{
         margin-left: 30px;
-        padding-top: 65px;
-        font-size: 35px;
+        padding-top: 65px;  
     }
 }
 
@@ -24,11 +25,11 @@
 }
 
 .Rest-Card__Link-Container-Image-Container-Image{
+    @include restBoxShadow;
     height: 325px;
     width: 100%;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
-    box-shadow: 1px 1px 20px #bebebe;
 }
 
 .Rest-Card__Link-Container-Image-Container-Image.Full-Position{
@@ -49,42 +50,29 @@
 
 .Rest-Card__Link-Container-Image-Container-Banner-Title{
     display: inline-block;
-    color: #3A8568;
-    font-size: 25px;
-    font-weight: 500;
-    border: 1px solid #99E2D0;  
+    border: 1px solid #99E2D0;
+    border-radius: 5px;  
     background: #99E2D0;
     padding: 8px 55px;
     position: absolute;
     top: 1.2rem;
     right: 2rem;
-    border-radius: 5px;
 }
 
 .Rest-Card__Link-Container-Description{
+    @include restBoxShadow;
     flex-grow: 1;
     background-color: white;
     padding: 15px 20px 22px 20px;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 1px 1px 20px #cbcbcb;
     position: relative;
-}
-
-.Rest-Card__Link-Container-Description-Title{
-    font-size: 30px;
- }
-
-.Rest-Card__Link-Container-Description-Location{
-    font-size: 25px;
-    font-weight: 300;
 }
 
 .fa-solid.fa-heart{
     margin-right: 0px;
 }
 
-.Rest-Card__Link-Container-Description-Icon{
-    font-size: 45px; 
+.Rest-Card__Link-Container-Description-Icon{ 
     position: absolute;
     bottom: 2rem;
     right: 3rem;

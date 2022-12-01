@@ -1,47 +1,28 @@
-@import "../utils/variables";   //imports are color variable needed to style rest buttons
-
+@import "../utils/variables";   //imports are color variables needed to style rest buttons
+@import "../utils/mixins";      //imports mixins
+@import "../base/typography";   //imports all font rules
 
 .Rest-Menu__Course-Container-List--Item-Button{
+    position: relative;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     border: none;
     border-radius: 20px;
     padding: 15px 12px;
     background-color: #FFFFFF;
     text-align: left;
     width: 100%;
-    position: relative;
-}
-
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title{
-    font-weight: 500;
-    // mobile layout breakpoint
-    @media screen and (min-width: 540px){
-        font-size: 33px;
-    }
-    // desktop layout breakpoint
-    @media screen and (min-width: 1025px) {
-        padding-right: 45px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle{
+    @include overflow;
     width: 100%;
-    font-weight: lighter;
     padding-right: 45px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
     transition-property: width;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     // mobile layout breakpoint
     @media screen and (min-width: 540px){
-        padding-right: 85px;
-        font-size: 27px;
+        padding-right: 85px; 
     }
 }
 
@@ -53,7 +34,6 @@
     transition: right 1s;
     // mobile layout breakpoint
     @media screen and (min-width: 540px){
-        font-size: 30px;
         right: 1.5rem;
         top: 3.8rem;
     }
@@ -67,10 +47,10 @@
     right: 0;
     top: 0;
     border: none;
-    background-color: $tertiary_color;
-    color: $tertiary_color;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: $tertiary_color;
+    color: $tertiary_color;
     transition-property: width;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -78,7 +58,6 @@
  }
 
 .fa-solid.fa-check{
-    font-size: 15px;
     margin-top: 30px;
     margin-right: 2px;
     padding: 5px 7px;
@@ -87,36 +66,24 @@
     background: white;
     // mobile layout breakpoint
     @media screen and (min-width: 540px){
-        font-size: 22px;
         margin-top: 45px;
     }
 }
 
 // restaurant 'order' button stylings
 .Rest-Menu__Course-Container-Button{
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
     padding-bottom: 20px;
     text-align: center;
-    // mobile layout breakpoint
-    @media screen and (min-width: 540px){
-        font-size: 25px;
-    }
-    // desktop layout breakpoint
-    @media screen and (mid-width: 1025px) {
-        font-size: 35px;
-    }
 }
 
 .Rest-Menu__Course-Container-Button-Title{
+    @include boxShadow;
     background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
-    color: white;
     border: none;
     margin-bottom: 100px;
     margin-top: 45px;
     padding: 18px 75px;
     border-radius: 40px;
-    box-shadow: 0px 5px 5px 2px #b8b8b8; 
     // desktop layout breakpoint
     @media screen and (min-width: 1025px) {
         border-radius: 45px;
@@ -176,3 +143,12 @@
         opacity: 1;
     }
 }
+
+// additional stylings for desktop layout
+@media screen and (min-width: 1025px) {
+    .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title{
+        @include overflow;
+        padding-right: 45px;
+    }
+}
+

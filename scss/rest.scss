@@ -2,12 +2,12 @@
 @import "./main.scss";                 //imports all global stylings
 @import "./components/rest-buttons";   //imports rest menu page button stylings
 @import "./utils/variables";           //imports all variables needed to style rest menu page
-
+@import "./utils/mixins";              //imports mixins
+@import "./base/typography";           //imports all font rules
 
 // all stylings pertaining to the rest menu page
 .Rest-Home__Header{
-    display: flex;
-    flex-direction: column;
+    @include layout;
 }
 
 .Rest-Home__Header-Container{
@@ -49,14 +49,8 @@
 
 .Rest-Home__Header-Container-Link{
     order: -1;
-    font-size: 30px;
-    //color: #343434;
     position: absolute;
     left: 1rem;
-    // mobile layout breakpoint
-    @media screen and (min-width: 540px){
-        font-size: 35px;
-    }
 }
 
 // the below line of code removes the right margin on
@@ -93,10 +87,6 @@
     }
 }
 
-.Rest-Menu__Header-Container-Title{
-    font-family: 'Shrikhand', cursive;
-}
-
 .Rest-Menu__Header-Container-Icon{
     position: absolute;
     right: 0.9rem;
@@ -114,22 +104,8 @@
     opacity: 0;
 }
 
-.Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon{
-    font-size: 25px;
-    // mobile layout breakpoint
-    @media screen and (min-width: 540px){
-        font-size: 45px;
-    }
-    // desktop layout breakpoint
-    @media screen and (min-width: 1025px) {
-        font-size: 55px;   
-    }
-}
-
 .Rest-Menu__Course{
-    display: flex;
-    flex-direction: column;
+    @include layout;
     gap: 25px;
     // desktop layout breakpoint
     @media screen and (min-width: 1025px) {
@@ -140,14 +116,6 @@
 
 .Rest-Menu__Course-Container-Title{
     display: inline-block;
-    color: #7C7C7C;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    // mobile layout breakpoint
-    @media screen and (min-width: 540px){
-        font-size: 30px;
-    }
 }
 
 .Rest-Menu__Header-Container-Icon:hover{

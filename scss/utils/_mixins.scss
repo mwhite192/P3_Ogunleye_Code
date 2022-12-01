@@ -1,0 +1,22 @@
+// mixin for flex layout
+@mixin layout {
+    display: flex;
+    flex-direction: column;
+}
+
+// mixin for text overflow
+@mixin overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// mixin for button box-shadow
+@mixin boxShadow {
+    box-shadow: 0px 5px 5px 2px #b8b8b8;
+} 
+
+// mixin for restaurant cards box-shadow
+@mixin restBoxShadow {
+    box-shadow: 1px 1px 20px #cbcbcb;
+}

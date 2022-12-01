@@ -1,36 +1,27 @@
-//color variables needed to style the home page's buttons
-$primary_color: #9356DC;   
-$secondary_color: #FF79DA;
+@import "../utils/variables";   //imports are color variables needed to style rest buttons
+@import "../utils/mixins";      //imports mixins
 
 .Home-Info__Btn-Title{
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    @include boxShadow;
     border: none;
     border-radius: 35px;
     padding: 15px 40px;
     background-image: linear-gradient($secondary_color, $primary_color);
-    box-shadow: 0px 5px 5px 2px #b8b8b8;
-    // mobile layout breakpoint
-    @media screen and (min-width: 540px){
-        font-size: 25px;
-    }
 }
 
  .Home-Info__Btn-Title:hover{
-     box-shadow: 5px 8px 15px #3d3d3d;
-     opacity: 0.8;
-     cursor: pointer;
+    box-shadow: 5px 8px 15px #3d3d3d;
+    opacity: 0.8;
+    cursor: pointer;
  }
 
 .Home-Instruct__Btn{
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    @include layout;
+    gap: 60px;   
 }
 
 .Home-Instruct__Btn-Container-Btn{
+    @include overflow;
     margin-left: 15px;
     margin-top: -12px;
     width: 85%;
@@ -39,10 +30,6 @@ $secondary_color: #FF79DA;
     border: none;
     border-radius: 33px;
     padding: 25px 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: bold;
-    text-overflow: ellipsis;
     box-shadow: 0px 5px 10px 2px #d3d3d3;
     // mobile layout breakpoint
     @media screen and (min-width: 540px){
@@ -50,7 +37,6 @@ $secondary_color: #FF79DA;
         gap: 35px;
         align-items: baseline;
         margin-top: -19px;
-        font-size: 28px;
     }
     // tablet layout breakpoint
     @media screen and (min-width: 770px){
@@ -75,11 +61,9 @@ $secondary_color: #FF79DA;
 .Home-Instruct__Btn-Container-Icon{
     color: #7b7b7b;
     position: relative;
-    font-size: 25px;
     padding-left: 15px;
     // mobile layout breakpoint
     @media screen and (min-width: 540px){
-        font-size: 32px;
         padding-left: 50px;
     }
 }
@@ -94,13 +78,11 @@ $secondary_color: #FF79DA;
     display: none;
     // desktop layout breakpoint
     @media screen and (min-width: 1025px) {
+        @include boxShadow;
         display: block;
-        color: white;
-        font-family: 'Roboto', sans-serif;
         background-image: linear-gradient($secondary_color, $primary_color);
         border: none;
         border-radius: 35px;
         padding: 15px 40px;
-        box-shadow: 0px 5px 5px 2px #b8b8b8;
     }
 }
