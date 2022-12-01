@@ -44,7 +44,7 @@ a:not([class]) {
 
 /* A elements unvisited text color is black */
 a:visited {
-  color: blue;
+  color: black;
 }
 
 /* Make images easier to work with */
@@ -77,11 +77,11 @@ select {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Home__Footer {
@@ -116,7 +116,7 @@ p, h1, h2 {
 
 .Home__Footer-Contact-Section-List-Item {
   padding-bottom: 2px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 23px;
 }
 .Home__Footer-Contact-Section-List-Item a.Home__Footer-Contact-Section-List-Item--link {

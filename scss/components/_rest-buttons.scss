@@ -3,6 +3,7 @@
 @import "../base/typography";   //imports all font rules
 
 .Rest-Menu__Course-Container-List--Item-Button{
+    @include layout;
     position: relative;
     cursor: pointer;
     font-family: $roboto;
@@ -24,7 +25,8 @@
     @media screen and (min-width: $desktop){
         @include overflow;
         font-size: 30px;
-        padding-right: 45px;
+        width: 100%;
+        padding-right: 75px;
     }
 }
 

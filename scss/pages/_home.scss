@@ -91,11 +91,16 @@ main{
     // desktop layout breakpoint
     @media screen and (min-width: $desktop){
         order: -1;
-        //background-image: linear-gradient(to right top, #dcc8f4, #e3c4f4, #ecbff2, #f5baef, #ffb4ea); background-image: linear-gradient(to right top, #d1b8f0, #dbb3f0, #e6adef, #f2a7eb, #ffa0e5);background-image: linear-gradient(to left bottom, #d1b8f0, #dbb3f0, #e6adef, #f2a7eb, #ffa0e5);
+        padding: 0px;
     }
     &:hover{
         .Home-Instruct__Desktop{
             display: block;
+            // desktop layout breakpoint
+            @media screen and (min-width: $desktop) {
+                padding: 55px 0px 98px 25px;
+            }
+            
         }
     }
     &__Header{

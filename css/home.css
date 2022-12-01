@@ -44,7 +44,7 @@ a:not([class]) {
 
 /* A elements unvisited text color is black */
 a:visited {
-  color: blue;
+  color: black;
 }
 
 /* Make images easier to work with */
@@ -77,11 +77,11 @@ select {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Home__Footer {
@@ -116,7 +116,7 @@ p, h1, h2 {
 
 .Home__Footer-Contact-Section-List-Item {
   padding-bottom: 2px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 23px;
 }
 .Home__Footer-Contact-Section-List-Item a.Home__Footer-Contact-Section-List-Item--link {
@@ -193,14 +193,15 @@ p, h1, h2 {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Home-Info__Btn-Title {
   box-shadow: 0px 5px 5px 2px #b8b8b8;
+  cursor: pointer;
   color: white;
   font-size: 15px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 35px;
   padding: 15px 40px;
@@ -214,14 +215,13 @@ p, h1, h2 {
 .Home-Info__Btn-Title:hover {
   box-shadow: 5px 8px 15px #3d3d3d;
   opacity: 0.8;
-  cursor: pointer;
 }
 
 .Home-Instruct__Btn {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -233,6 +233,7 @@ p, h1, h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
   margin-left: 15px;
   margin-top: -12px;
   width: 85%;
@@ -244,7 +245,6 @@ p, h1, h2 {
   box-shadow: 0px 5px 10px 2px #d3d3d3;
 }
 .Home-Instruct__Btn-Container-Btn:hover {
-  cursor: pointer;
   box-shadow: 5px 8px 15px #adadad;
   background-color: #F5EDFE;
 }
@@ -281,19 +281,22 @@ p, h1, h2 {
 
 .Home-Instruct__Desktop-Btn {
   position: absolute;
+  height: 200px;
+  z-index: 2;
   top: 1.5rem;
   right: 2rem;
 }
 
 .Home-Instruct__Desktop-Btn--Btn {
   display: none;
-  color: white;
-  font-family: "Roboto", serif;
 }
 @media screen and (min-width: 1025px) {
   .Home-Instruct__Desktop-Btn--Btn {
     box-shadow: 0px 5px 5px 2px #b8b8b8;
+    cursor: pointer;
     display: block;
+    color: white;
+    font-family: "Roboto", sans-serif;
     background-image: linear-gradient(#FF79DA, #9356DC);
     border: none;
     border-radius: 35px;
@@ -302,7 +305,7 @@ p, h1, h2 {
 }
 
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Rest-Card {
@@ -416,7 +419,7 @@ p, h1, h2 {
 }
 
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -514,10 +517,16 @@ main {
 @media screen and (min-width: 1025px) {
   .Home-Instruct {
     order: -1;
+    padding: 0px;
   }
 }
 .Home-Instruct:hover .Home-Instruct__Desktop {
   display: block;
+}
+@media screen and (min-width: 1025px) {
+  .Home-Instruct:hover .Home-Instruct__Desktop {
+    padding: 55px 0px 98px 25px;
+  }
 }
 .Home-Instruct__Header {
   font-size: 30px;

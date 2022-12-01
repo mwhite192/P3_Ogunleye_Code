@@ -44,7 +44,7 @@ a:not([class]) {
 
 /* A elements unvisited text color is black */
 a:visited {
-  color: blue;
+  color: black;
 }
 
 /* Make images easier to work with */
@@ -77,11 +77,11 @@ select {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Home__Footer {
@@ -116,7 +116,7 @@ p, h1, h2 {
 
 .Home__Footer-Contact-Section-List-Item {
   padding-bottom: 2px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 23px;
 }
 .Home__Footer-Contact-Section-List-Item a.Home__Footer-Contact-Section-List-Item--link {
@@ -193,13 +193,15 @@ p, h1, h2 {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button {
+  display: flex;
+  flex-direction: column;
   position: relative;
   cursor: pointer;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 20px;
   padding: 15px 12px;
@@ -222,7 +224,8 @@ p, h1, h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 30px;
-    padding-right: 45px;
+    width: 100%;
+    padding-right: 75px;
   }
 }
 
@@ -299,7 +302,7 @@ p, h1, h2 {
 }
 
 .Rest-Menu__Course-Container-Button {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   padding-bottom: 20px;
   text-align: center;
@@ -395,7 +398,7 @@ p, h1, h2 {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .Rest-Home__Header {
@@ -551,7 +554,7 @@ p, h1, h2 {
 
 .Rest-Menu__Course-Container-Title {
   display: inline-block;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #7C7C7C;
