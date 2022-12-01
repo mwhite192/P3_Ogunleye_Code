@@ -24,7 +24,7 @@ main{
         margin-top: 40px;
         margin-bottom: 5px;
         // mobile layout breakpoint
-        @media screen and (min-width: 540px){
+        @media screen and (min-width: $mobile){
             height: 50px;
         }
     }
@@ -40,12 +40,17 @@ main{
 }
 
 .Home-Header__Location{
+    font-size: 23px;
     background-color: #eaeaea;
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: baseline;
     padding: 20px 45px 20px 0px;
+    // mobile layout breakpoint
+    @media screen and (min-width: $mobile){
+        font-size: 29px;
+    }
 }
 
 .Home-Info{
@@ -55,9 +60,26 @@ main{
     gap: 25px;
     padding-top: 45px;
     padding-bottom: 90px;
+    &__Header{
+        font-size: 25px;
+        // mobile layout breakpoint
+        @media screen and (min-width: $mobile){
+            font-size: 45px;
+        }
+    }
     &__SubHeader{
         line-height: 35px;
         text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        // mobile layout breakpoint
+        @media screen and (min-width: $mobile){
+            font-size: 29px;
+        }
+        // tablet layout breakpoint
+        @media screen and (min-width: $tablet){
+            font-size: 34px;
+        }
     }
 }
 
@@ -67,7 +89,7 @@ main{
     @include layout;
     gap: 60px;
     // desktop layout breakpoint
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $desktop){
         order: -1;
         //background-image: linear-gradient(to right top, #dcc8f4, #e3c4f4, #ecbff2, #f5baef, #ffb4ea); background-image: linear-gradient(to right top, #d1b8f0, #dbb3f0, #e6adef, #f2a7eb, #ffa0e5);background-image: linear-gradient(to left bottom, #d1b8f0, #dbb3f0, #e6adef, #f2a7eb, #ffa0e5);
     }
@@ -77,7 +99,20 @@ main{
         }
     }
     &__Header{
+        font-size: 30px;
         margin-bottom: 45px;
+        // mobile layout breakpoint
+        @media screen and (min-width: $mobile){
+            font-size: 43px;
+        }
+    }
+}
+
+.Rest-Card__Header{
+    font-size: 32px;
+    // mobile layout breakpoint
+    @media screen and (min-width: $mobile){
+        font-size: 43px;
     }
 }
 
@@ -85,7 +120,7 @@ main{
     @include layout;
     gap: 35px;
     // tablet layout breakpoint
-    @media screen and (min-width: 770px){
+    @media screen and (min-width: $tablet){
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -95,7 +130,7 @@ main{
     a.Rest-Card__Link{
         color: black;
         // tablet layout breakpoint
-        @media screen and (min-width: 770px){
+        @media screen and (min-width: $tablet){
             flex-basis: 50%;
         } 
     }
@@ -104,39 +139,54 @@ main{
 .Rest-Card__Link-Container-Image-Container-Image{
     height: 200px;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
         height: 275px;
     }
     // tablet layout breakpoint
-    @media screen and (min-width: 770px){
+    @media screen and (min-width: $tablet){
         object-position: 55% 0%;
     }
 }
 
 .Rest-Card__Link-Container-Image-Container-Banner-Title{
+    font-size: 18px;
     right: 1rem;
     padding: 8px 40px;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 24px;
         padding: 8px 55px;
         border-radius: 3px  
     }
     // tablet layout breakpoints
-    @media screen and (min-width: 770px){
+    @media screen and (min-width: $tablet){
+        font-size: 18px;
         padding: 8px 45px;
         top: 1.2rem;
         right: 1rem;
     }
 }
 
+.Rest-Card__Link-Container-Description-Title,
+.Rest-Card__Link-Container-Description-Location{
+    font-size: 15px;
+    // mobile layout breakpoint
+    @media screen and (min-width: $mobile){
+        font-size: 25px;
+    }
+}
+
 .Rest-Card__Link-Container-Description-Icon{
+    font-size: 30px;
     bottom: 1.8rem;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 45px;
         bottom: 2.8rem;
     }
     // tablet layout breakpoint
-    @media screen and (min-width: 770px){
+    @media screen and (min-width: $tablet){
+        font-size: 35px;
         bottom: 2.5rem;
         right: 1.7rem;
     }
@@ -178,14 +228,18 @@ main{
   }
 
 // additional stylings for tablet layout 
-@media screen and (min-width: 770px){
+@media screen and (min-width: $tablet){
     .Rest-Card__Link-Container-Image-Container{
         height: 250px;
+    }
+
+    .Rest-Card__Link-Container-Description-Location{
+        font-size: 24px;
     }
 }
 
 // additional stylings for desktop layout
-@media screen and (min-width: 1025px){
+@media screen and (min-width: $desktop){
     .Home-Instruct__Desktop{
         display: none;
     }

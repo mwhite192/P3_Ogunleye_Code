@@ -5,6 +5,7 @@
 .Rest-Menu__Course-Container-List--Item-Button{
     position: relative;
     cursor: pointer;
+    font-family: $roboto;
     border: none;
     border-radius: 20px;
     padding: 15px 12px;
@@ -13,15 +14,31 @@
     width: 100%;
 }
 
+.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title{
+    font-weight: 500;
+    // mobile layout breakpoint
+    @media screen and (min-width: $mobile){
+        font-size: 33px;
+    }  
+    // desktop layout breakpoint
+    @media screen and (min-width: $desktop){
+        @include overflow;
+        font-size: 30px;
+        padding-right: 45px;
+    }
+}
+
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle{
     @include overflow;
+    font-weight: lighter;
     width: 100%;
     padding-right: 45px;
     transition-property: width;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 27px;
         padding-right: 85px; 
     }
 }
@@ -33,9 +50,14 @@
     top: 2.8rem;
     transition: right 1s;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 30px;
         right: 1.5rem;
         top: 3.8rem;
+    }
+    // desktop layout breakpoint
+    @media screen and (min-width: $desktop){
+        font-size: 26px;
     }
 }
 
@@ -58,6 +80,7 @@
  }
 
 .fa-solid.fa-check{
+    font-size: 15px;
     margin-top: 30px;
     margin-right: 2px;
     padding: 5px 7px;
@@ -65,32 +88,43 @@
     border-radius: 50px;
     background: white;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 22px;
         margin-top: 45px;
     }
 }
 
 // restaurant 'order' button stylings
 .Rest-Menu__Course-Container-Button{
+    font-family: $roboto;
+    font-size: 15px;
     padding-bottom: 20px;
     text-align: center;
-}
-
-.Rest-Menu__Course-Container-Button-Title{
-    @include boxShadow;
-    background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
-    border: none;
-    margin-bottom: 100px;
-    margin-top: 45px;
-    padding: 18px 75px;
-    border-radius: 40px;
+     // mobile layout breakpoint
+     @media screen and (min-width: $mobile){
+        font-size: 25px;
+    }
     // desktop layout breakpoint
-    @media screen and (min-width: 1025px) {
-        border-radius: 45px;
-        padding:  18px 100px;
-        margin-top: 75px;
-    } 
-}// end of restaurant 'order' button stylings
+    @media screen and (mid-width: $desktop){
+        font-size: 35px;
+    }
+    &-Title{
+        @include boxShadow;
+        color: white;
+        background-image: linear-gradient(to bottom right, $secondary_color, $primary_color);
+        border: none;
+        margin-bottom: 100px;
+        margin-top: 45px;
+        padding: 18px 75px;
+        border-radius: 40px;
+        // desktop layout breakpoint
+        @media screen and (min-width: $desktop){
+            border-radius: 45px;
+            padding:  18px 100px;
+            margin-top: 75px;
+        } 
+    }// end of restaurant 'order' button stylings
+}
 
 // transition stylings for the 'dish selection' check
 .Rest-Menu__Course-Container-List--Item-Button:hover
@@ -141,14 +175,6 @@
 
     100%{
         opacity: 1;
-    }
-}
-
-// additional stylings for desktop layout
-@media screen and (min-width: 1025px) {
-    .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title{
-        @include overflow;
-        padding-right: 45px;
     }
 }
 

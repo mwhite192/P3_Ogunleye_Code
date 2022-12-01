@@ -77,268 +77,13 @@ select {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
-.Home__Footer-Contact-Section-Header {
-  font-family: "Shrikhand", cursive;
+p, h1, h2 {
+  font-family: "Roboto", serif;
 }
 
-.Home-Header__Location {
-  font-size: 23px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Header__Location {
-    font-size: 29px;
-  }
-}
-
-.Home-Info__Header {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__Header {
-    font-size: 45px;
-  }
-}
-
-.Home-Info__SubHeader {
-  font-weight: 300;
-  font-size: 18px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__SubHeader {
-    font-size: 29px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Home-Info__SubHeader {
-    font-size: 34px;
-  }
-}
-
-.Home-Instruct__Header {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Header {
-    font-size: 43px;
-  }
-}
-
-.Rest-Card__Header {
-  font-size: 32px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Header {
-    font-size: 43px;
-  }
-}
-
-.Rest-Card__Link-Container-Image-Container-Banner-Title {
-  font-size: 18px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Image-Container-Banner-Title {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Image-Container-Banner-Title {
-    font-size: 18px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Title,
-.Rest-Card__Link-Container-Description-Location {
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Description-Title,
-.Rest-Card__Link-Container-Description-Location {
-    font-size: 25px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Icon {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Description-Icon {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Description-Icon {
-    font-size: 35px;
-  }
-}
-
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Description-Location {
-    font-size: 24px;
-  }
-}
-.Rest-Home__Header-Container-Link {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Home__Header-Container-Link {
-    font-size: 35px;
-  }
-}
-
-.Rest-Menu__Header-Container-Title {
-  font-family: "Shrikhand", cursive;
-}
-
-.Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 55px;
-  }
-}
-
-.Rest-Menu__Course-Container-Title {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #7C7C7C;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-Title {
-    font-size: 30px;
-  }
-}
-
-.Rest-Card__Header {
-  font-size: 35px;
-}
-
-.Rest-Card__Link-Container-Image-Container-Banner-Title {
-  color: #3A8568;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.Rest-Card__Link-Container-Description-Title {
-  font-size: 30px;
-}
-
-.Rest-Card__Link-Container-Description-Location {
-  font-size: 25px;
-  font-weight: 300;
-}
-@media screen and (min-width: 1025px) {
-  .Rest-Card__Link-Container-Description-Location {
-    font-size: 28px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Icon {
-  font-size: 45px;
-}
-
-.Home-Info__Btn-Title {
-  color: white;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__Btn-Title {
-    font-size: 25px;
-  }
-}
-
-.Home-Instruct__Btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.Home-Instruct__Btn-Container-Icon {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Btn-Container-Icon {
-    font-size: 32px;
-  }
-}
-
-.Home-Instruct__Desktop-Btn--Btn {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Btn-Container-Btn {
-    font-size: 28px;
-  }
-}
-.Rest-Menu__Course-Container-List--Item-Button {
-  font-family: "Roboto", sans-serif;
-}
-
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
-  font-weight: 500;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
-    font-size: 33px;
-  }
-}
-
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-  font-weight: lighter;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-    font-size: 27px;
-  }
-}
-
-.fa-solid.fa-check {
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .fa-solid.fa-check {
-    font-size: 22px;
-  }
-}
-
-.Rest-Menu__Course-Container-Button {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-Button {
-    font-size: 25px;
-  }
-}
-@media screen and (mid-width: 1025px) {
-  .Rest-Menu__Course-Container-Button {
-    font-size: 35px;
-  }
-}
-
-.Rest-Menu__Course-Container-Button-Title {
-  color: white;
-}
-
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
-    font-size: 30px;
-  }
-}
 .Home__Footer {
   color: white;
   background-color: #353535;
@@ -346,6 +91,7 @@ p, h1, h2 {
 }
 
 .Home__Footer-Contact-Section-Header {
+  font-family: "Shrikhand", cursive;
   font-size: 25px;
   padding-bottom: 5px;
 }
@@ -370,7 +116,7 @@ p, h1, h2 {
 
 .Home__Footer-Contact-Section-List-Item {
   padding-bottom: 2px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   font-size: 23px;
 }
 .Home__Footer-Contact-Section-List-Item a.Home__Footer-Contact-Section-List-Item--link {
@@ -447,215 +193,19 @@ p, h1, h2 {
   }
 }
 p, h1, h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
-.Home__Footer-Contact-Section-Header {
-  font-family: "Shrikhand", cursive;
-}
-
-.Home-Header__Location {
-  font-size: 23px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Header__Location {
-    font-size: 29px;
-  }
-}
-
-.Home-Info__Header {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__Header {
-    font-size: 45px;
-  }
-}
-
-.Home-Info__SubHeader {
-  font-weight: 300;
-  font-size: 18px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__SubHeader {
-    font-size: 29px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Home-Info__SubHeader {
-    font-size: 34px;
-  }
-}
-
-.Home-Instruct__Header {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Header {
-    font-size: 43px;
-  }
-}
-
-.Rest-Card__Header {
-  font-size: 32px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Header {
-    font-size: 43px;
-  }
-}
-
-.Rest-Card__Link-Container-Image-Container-Banner-Title {
-  font-size: 18px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Image-Container-Banner-Title {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Image-Container-Banner-Title {
-    font-size: 18px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Title,
-.Rest-Card__Link-Container-Description-Location {
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Description-Title,
-.Rest-Card__Link-Container-Description-Location {
-    font-size: 25px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Icon {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Description-Icon {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Description-Icon {
-    font-size: 35px;
-  }
-}
-
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Description-Location {
-    font-size: 24px;
-  }
-}
-.Rest-Home__Header-Container-Link {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Home__Header-Container-Link {
-    font-size: 35px;
-  }
-}
-
-.Rest-Menu__Header-Container-Title {
-  font-family: "Shrikhand", cursive;
-}
-
-.Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 55px;
-  }
-}
-
-.Rest-Menu__Course-Container-Title {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #7C7C7C;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-Title {
-    font-size: 30px;
-  }
-}
-
-.Rest-Card__Header {
-  font-size: 35px;
-}
-
-.Rest-Card__Link-Container-Image-Container-Banner-Title {
-  color: #3A8568;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.Rest-Card__Link-Container-Description-Title {
-  font-size: 30px;
-}
-
-.Rest-Card__Link-Container-Description-Location {
-  font-size: 25px;
-  font-weight: 300;
-}
-@media screen and (min-width: 1025px) {
-  .Rest-Card__Link-Container-Description-Location {
-    font-size: 28px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Icon {
-  font-size: 45px;
-}
-
-.Home-Info__Btn-Title {
-  color: white;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__Btn-Title {
-    font-size: 25px;
-  }
-}
-
-.Home-Instruct__Btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.Home-Instruct__Btn-Container-Icon {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Btn-Container-Icon {
-    font-size: 32px;
-  }
-}
-
-.Home-Instruct__Desktop-Btn--Btn {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Btn-Container-Btn {
-    font-size: 28px;
-  }
-}
 .Rest-Menu__Course-Container-List--Item-Button {
-  font-family: "Roboto", sans-serif;
+  position: relative;
+  cursor: pointer;
+  font-family: "Roboto", serif;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 12px;
+  background-color: #FFFFFF;
+  text-align: left;
+  width: 100%;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
@@ -666,64 +216,21 @@ p, h1, h2 {
     font-size: 33px;
   }
 }
-
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-  font-weight: lighter;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-    font-size: 27px;
-  }
-}
-
-.fa-solid.fa-check {
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .fa-solid.fa-check {
-    font-size: 22px;
-  }
-}
-
-.Rest-Menu__Course-Container-Button {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-Button {
-    font-size: 25px;
-  }
-}
-@media screen and (mid-width: 1025px) {
-  .Rest-Menu__Course-Container-Button {
-    font-size: 35px;
-  }
-}
-
-.Rest-Menu__Course-Container-Button-Title {
-  color: white;
-}
-
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
+@media screen and (min-width: 1025px) {
+  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 30px;
+    padding-right: 45px;
   }
-}
-.Rest-Menu__Course-Container-List--Item-Button {
-  position: relative;
-  cursor: pointer;
-  border: none;
-  border-radius: 20px;
-  padding: 15px 12px;
-  background-color: #FFFFFF;
-  text-align: left;
-  width: 100%;
 }
 
 .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: lighter;
   width: 100%;
   padding-right: 45px;
   transition-property: width;
@@ -732,6 +239,7 @@ p, h1, h2 {
 }
 @media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
+    font-size: 27px;
     padding-right: 85px;
   }
 }
@@ -745,8 +253,14 @@ p, h1, h2 {
 }
 @media screen and (min-width: 540px) {
   .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
+    font-size: 30px;
     right: 1.5rem;
     top: 3.8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
+    font-size: 26px;
   }
 }
 
@@ -769,6 +283,7 @@ p, h1, h2 {
 }
 
 .fa-solid.fa-check {
+  font-size: 15px;
   margin-top: 30px;
   margin-right: 2px;
   padding: 5px 7px;
@@ -778,17 +293,30 @@ p, h1, h2 {
 }
 @media screen and (min-width: 540px) {
   .fa-solid.fa-check {
+    font-size: 22px;
     margin-top: 45px;
   }
 }
 
 .Rest-Menu__Course-Container-Button {
+  font-family: "Roboto", serif;
+  font-size: 15px;
   padding-bottom: 20px;
   text-align: center;
 }
-
+@media screen and (min-width: 540px) {
+  .Rest-Menu__Course-Container-Button {
+    font-size: 25px;
+  }
+}
+@media screen and (mid-width: 1025px) {
+  .Rest-Menu__Course-Container-Button {
+    font-size: 35px;
+  }
+}
 .Rest-Menu__Course-Container-Button-Title {
   box-shadow: 0px 5px 5px 2px #b8b8b8;
+  color: white;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border: none;
   margin-bottom: 100px;
@@ -866,277 +394,10 @@ p, h1, h2 {
     opacity: 1;
   }
 }
-@media screen and (min-width: 1025px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 45px;
-  }
-}
 p, h1, h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
-.Home__Footer-Contact-Section-Header {
-  font-family: "Shrikhand", cursive;
-}
-
-.Home-Header__Location {
-  font-size: 23px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Header__Location {
-    font-size: 29px;
-  }
-}
-
-.Home-Info__Header {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__Header {
-    font-size: 45px;
-  }
-}
-
-.Home-Info__SubHeader {
-  font-weight: 300;
-  font-size: 18px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__SubHeader {
-    font-size: 29px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Home-Info__SubHeader {
-    font-size: 34px;
-  }
-}
-
-.Home-Instruct__Header {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Header {
-    font-size: 43px;
-  }
-}
-
-.Rest-Card__Header {
-  font-size: 32px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Header {
-    font-size: 43px;
-  }
-}
-
-.Rest-Card__Link-Container-Image-Container-Banner-Title {
-  font-size: 18px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Image-Container-Banner-Title {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Image-Container-Banner-Title {
-    font-size: 18px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Title,
-.Rest-Card__Link-Container-Description-Location {
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Description-Title,
-.Rest-Card__Link-Container-Description-Location {
-    font-size: 25px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Icon {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Card__Link-Container-Description-Icon {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Description-Icon {
-    font-size: 35px;
-  }
-}
-
-@media screen and (min-width: 770px) {
-  .Rest-Card__Link-Container-Description-Location {
-    font-size: 24px;
-  }
-}
-.Rest-Home__Header-Container-Link {
-  font-size: 30px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Home__Header-Container-Link {
-    font-size: 35px;
-  }
-}
-
-.Rest-Menu__Header-Container-Title {
-  font-family: "Shrikhand", cursive;
-}
-
-.Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 45px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .Rest-Menu__Header-Container-Title,
-.Rest-Menu__Header-Container-Icon {
-    font-size: 55px;
-  }
-}
-
-.Rest-Menu__Course-Container-Title {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #7C7C7C;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-Title {
-    font-size: 30px;
-  }
-}
-
-.Rest-Card__Header {
-  font-size: 35px;
-}
-
-.Rest-Card__Link-Container-Image-Container-Banner-Title {
-  color: #3A8568;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.Rest-Card__Link-Container-Description-Title {
-  font-size: 30px;
-}
-
-.Rest-Card__Link-Container-Description-Location {
-  font-size: 25px;
-  font-weight: 300;
-}
-@media screen and (min-width: 1025px) {
-  .Rest-Card__Link-Container-Description-Location {
-    font-size: 28px;
-  }
-}
-
-.Rest-Card__Link-Container-Description-Icon {
-  font-size: 45px;
-}
-
-.Home-Info__Btn-Title {
-  color: white;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-}
-@media screen and (min-width: 540px) {
-  .Home-Info__Btn-Title {
-    font-size: 25px;
-  }
-}
-
-.Home-Instruct__Btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.Home-Instruct__Btn-Container-Icon {
-  font-size: 25px;
-}
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Btn-Container-Icon {
-    font-size: 32px;
-  }
-}
-
-.Home-Instruct__Desktop-Btn--Btn {
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-
-@media screen and (min-width: 540px) {
-  .Home-Instruct__Btn-Container-Btn {
-    font-size: 28px;
-  }
-}
-.Rest-Menu__Course-Container-List--Item-Button {
-  font-family: "Roboto", sans-serif;
-}
-
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
-  font-weight: 500;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Title {
-    font-size: 33px;
-  }
-}
-
-.Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-  font-weight: lighter;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Subtitle {
-    font-size: 27px;
-  }
-}
-
-.fa-solid.fa-check {
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .fa-solid.fa-check {
-    font-size: 22px;
-  }
-}
-
-.Rest-Menu__Course-Container-Button {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-}
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-Button {
-    font-size: 25px;
-  }
-}
-@media screen and (mid-width: 1025px) {
-  .Rest-Menu__Course-Container-Button {
-    font-size: 35px;
-  }
-}
-
-.Rest-Menu__Course-Container-Button-Title {
-  color: white;
-}
-
-@media screen and (min-width: 540px) {
-  .Rest-Menu__Course-Container-List--Item-Button-Info-Container-Price {
-    font-size: 30px;
-  }
-}
 .Rest-Home__Header {
   display: flex;
   flex-direction: column;
@@ -1148,7 +409,6 @@ p, h1, h2 {
   padding-bottom: 15px;
   padding-top: 30px;
 }
-
 .Rest-Home__Header-Container-Image {
   height: 40px;
 }
@@ -1157,10 +417,26 @@ p, h1, h2 {
     height: 48px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .Rest-Home__Header-Container-Image {
+    height: 55px;
+  }
+}
+.Rest-Home__Header-Container-Link {
+  font-size: 30px;
+  order: -1;
+  position: absolute;
+  left: 1rem;
+}
+@media screen and (min-width: 540px) {
+  .Rest-Home__Header-Container-Link {
+    font-size: 35px;
+  }
+}
 
 .Rest-Home__Header-Image-Container-Image {
-  height: 345px;
   width: 100%;
+  height: 345px;
   object-fit: cover;
 }
 @media screen and (min-width: 770px) {
@@ -1181,12 +457,6 @@ p, h1, h2 {
   .Rest-Home__Header-Image-Container-Image.Gourmand {
     object-position: 0% 40%;
   }
-}
-
-.Rest-Home__Header-Container-Link {
-  order: -1;
-  position: absolute;
-  left: 1rem;
 }
 
 .fa-solid.fa-heart {
@@ -1222,7 +492,9 @@ p, h1, h2 {
     padding: 60px 0px 85px 120px;
   }
 }
-
+.Rest-Menu__Header-Container-Title {
+  font-family: "Shrikhand", cursive;
+}
 .Rest-Menu__Header-Container-Icon {
   position: absolute;
   right: 0.9rem;
@@ -1235,10 +507,34 @@ p, h1, h2 {
     padding-right: 140px;
   }
 }
-
 .Rest-Menu__Header-Container-Icon.Filled {
   position: absolute;
   opacity: 0;
+}
+
+.Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon {
+  font-size: 25px;
+}
+@media screen and (min-width: 540px) {
+  .Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .Rest-Menu__Header-Container-Title,
+.Rest-Menu__Header-Container-Icon {
+    font-size: 55px;
+  }
+}
+
+.Rest-Menu__Header-Container-Icon:hover {
+  opacity: 1;
+  background-image: linear-gradient(180deg, #9356DC, #FF79DA);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .Rest-Menu__Course {
@@ -1255,14 +551,15 @@ p, h1, h2 {
 
 .Rest-Menu__Course-Container-Title {
   display: inline-block;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #7C7C7C;
 }
-
-.Rest-Menu__Header-Container-Icon:hover {
-  opacity: 1;
-  background-image: linear-gradient(180deg, #9356DC, #FF79DA);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+@media screen and (min-width: 540px) {
+  .Rest-Menu__Course-Container-Title {
+    font-size: 30px;
+  }
 }
 
 .Rest-Menu__Course-Container-Title:after {
@@ -1276,7 +573,6 @@ p, h1, h2 {
 .Rest-Menu__Course-Container-List {
   padding-left: 0px;
 }
-
 .Rest-Menu__Course-Container-List--Item {
   list-style: none;
   margin-bottom: 25px;

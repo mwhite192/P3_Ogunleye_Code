@@ -1,23 +1,36 @@
 @import "../utils/variables";   //imports are color variables needed to style rest buttons
 @import "../utils/mixins";      //imports mixins
+@import "../base/typography";   //imports all font rules
 
 .Home-Info__Btn-Title{
     @include boxShadow;
+    color: white;
+    font-size: 15px;
+    font-family: $roboto;
     border: none;
     border-radius: 35px;
     padding: 15px 40px;
     background-image: linear-gradient($secondary_color, $primary_color);
+    // mobile layout breakpoint
+    @media screen and (min-width: $mobile){
+        font-size: 25px;
+    }
+    &:hover{
+        box-shadow: 5px 8px 15px #3d3d3d;
+        opacity: 0.8;
+        cursor: pointer;
+    }
 }
-
- .Home-Info__Btn-Title:hover{
-    box-shadow: 5px 8px 15px #3d3d3d;
-    opacity: 0.8;
-    cursor: pointer;
- }
 
 .Home-Instruct__Btn{
     @include layout;
-    gap: 60px;   
+    gap: 60px; 
+    font-family: $roboto;
+    font-weight: bold;  
+}
+
+.Home-Instruct__Btn--Item:hover{
+    transform: translateY(-2px);
 }
 
 .Home-Instruct__Btn-Container-Btn{
@@ -31,39 +44,37 @@
     border-radius: 33px;
     padding: 25px 15px;
     box-shadow: 0px 5px 10px 2px #d3d3d3;
+    &:hover{
+        cursor: pointer; 
+        box-shadow: 5px 8px 15px #adadad;
+        background-color: #F5EDFE;
+        .Home-Instruct__Btn-Container-Icon{
+            color: #8354C9;
+            //color: #b287e6;
+        } 
+    }
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 28px;
         display: flex;
         gap: 35px;
         align-items: baseline;
         margin-top: -19px;
     }
     // tablet layout breakpoint
-    @media screen and (min-width: 770px){
+    @media screen and (min-width: $tablet){
         width: 80%;
     }
 }
 
-.Home-Instruct__Btn-Container-Btn:hover{
-    cursor: pointer; 
-    box-shadow: 5px 8px 15px #adadad;
-    background-color: #F5EDFE;
-    .Home-Instruct__Btn-Container-Icon{
-        color: #8354C9;
-        //color: #b287e6;
-    } 
-}
-
-.Home-Instruct__Btn--Item:hover{
-    transform: translateY(-2px);
-}
-
 .Home-Instruct__Btn-Container-Icon{
+    font-size: 25px;
     color: #7b7b7b;
     position: relative;
     padding-left: 15px;
     // mobile layout breakpoint
-    @media screen and (min-width: 540px){
+    @media screen and (min-width: $mobile){
+        font-size: 32px;
         padding-left: 50px;
     }
 }
@@ -76,8 +87,10 @@
 
 .Home-Instruct__Desktop-Btn--Btn{
     display: none;
+    color: white;
+    font-family: $roboto;
     // desktop layout breakpoint
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $desktop){
         @include boxShadow;
         display: block;
         background-image: linear-gradient($secondary_color, $primary_color);

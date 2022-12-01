@@ -1,3 +1,5 @@
+@import "../base/typography";  //imports all font rules
+
 .Home__Footer{
     color: white;
     background-color: #353535;
@@ -5,6 +7,7 @@
 }
 
 .Home__Footer-Contact-Section-Header{
+    font-family: $shrikhand;
     font-size: 25px;
     padding-bottom: 5px;
 }
@@ -29,7 +32,7 @@
 
 .Home__Footer-Contact-Section-List-Item{
     padding-bottom: 2px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     font-size: 23px;
     a.Home__Footer-Contact-Section-List-Item--link {
         color: white;
