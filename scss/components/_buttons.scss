@@ -17,8 +17,7 @@
         font-size: 25px;
     }
     &:hover{
-        box-shadow: 5px 8px 15px #3d3d3d;
-        opacity: 0.8;
+        @include homeBoxShadow;
     }
 }
 
@@ -100,5 +99,8 @@
         border: none;
         border-radius: 35px;
         padding: 15px 40px;
+        &:hover{
+            @include homeBoxShadow;
+        }
     }
 }

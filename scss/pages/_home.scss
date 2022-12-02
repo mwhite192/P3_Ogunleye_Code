@@ -97,7 +97,7 @@ main{
         .Home-Instruct__Desktop{
             display: block;
             // desktop layout breakpoint
-            @media screen and (min-width: $desktop) {
+            @media screen and (min-width: $desktop){
                 padding: 55px 0px 98px 25px;
             }
             

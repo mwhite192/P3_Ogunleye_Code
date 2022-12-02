@@ -16,6 +16,12 @@
     box-shadow: 0px 5px 5px 2px #b8b8b8;
 } 
 
+// mixin for home page buttons
+@mixin homeBoxShadow {
+    box-shadow: 5px 8px 15px #3d3d3d;
+    opacity: 0.8;
+}
+
 // mixin for restaurant cards box-shadow
 @mixin restBoxShadow {
     box-shadow: 1px 1px 20px #cbcbcb;
