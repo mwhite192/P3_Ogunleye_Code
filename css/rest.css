@@ -162,6 +162,11 @@ p, h1, h2 {
     width: 25%;
   }
 }
+@media screen and (min-width: 1920px) {
+  .Bounce-Loader {
+    width: 18%;
+  }
+}
 
 .Bounce-Loader div {
   width: 100%;
