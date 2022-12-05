@@ -125,6 +125,10 @@
     }
 }
 
+.Rest-Menu__Header-Container-Title.Modified{
+    font-size: 33px;
+}
+
 .Rest-Menu__Header-Container-Icon:hover{
     opacity: 1;  
     background-image: linear-gradient(180deg, $primary_color, $secondary_color);
